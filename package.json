@@ -1,12 +1,12 @@
 {
   "name": "app-store-connect-api",
-  "version": "0.0.1-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "The official TypeScript library for the App Store Connect API API",
   "author": "App Store Connect API <>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/app-store-connect-api-typescript",
+  "repository": "github:isaiahbjork/app-store-connect-typescript",
   "license": "Apache-2.0",
   "packageManager": "yarn@1.22.22",
   "files": [

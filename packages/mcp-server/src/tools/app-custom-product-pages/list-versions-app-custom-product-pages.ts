@@ -1,0 +1,100 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import { asTextContentResult } from 'app-store-connect-mcp/tools/types';
+
+import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { Metadata } from '../';
+import AppStoreConnectAPI from 'app-store-connect-api';
+
+export const metadata: Metadata = {
+  resource: 'app_custom_product_pages',
+  operation: 'read',
+  tags: [],
+  httpMethod: 'get',
+  httpPath: '/v1/appCustomProductPages/{id}/appCustomProductPageVersions',
+  operationId: 'appCustomProductPages_appCustomProductPageVersions_getToManyRelated',
+};
+
+export const tool: Tool = {
+  name: 'list_versions_app_custom_product_pages',
+  description: '',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      id: {
+        type: 'string',
+      },
+      'fields[appCustomProductPageLocalizations]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appCustomProductPageLocalizations',
+        items: {
+          type: 'string',
+          enum: [
+            'locale',
+            'promotionalText',
+            'appCustomProductPageVersion',
+            'appScreenshotSets',
+            'appPreviewSets',
+          ],
+        },
+      },
+      'fields[appCustomProductPages]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appCustomProductPages',
+        items: {
+          type: 'string',
+          enum: ['name', 'url', 'visible', 'app', 'appCustomProductPageVersions'],
+        },
+      },
+      'fields[appCustomProductPageVersions]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appCustomProductPageVersions',
+        items: {
+          type: 'string',
+          enum: ['version', 'state', 'deepLink', 'appCustomProductPage', 'appCustomProductPageLocalizations'],
+        },
+      },
+      'filter[state]': {
+        type: 'array',
+        description: "filter by attribute 'state'",
+        items: {
+          type: 'string',
+          enum: [
+            'PREPARE_FOR_SUBMISSION',
+            'READY_FOR_REVIEW',
+            'WAITING_FOR_REVIEW',
+            'IN_REVIEW',
+            'ACCEPTED',
+            'APPROVED',
+            'REPLACED_WITH_NEW_VERSION',
+            'REJECTED',
+          ],
+        },
+      },
+      include: {
+        type: 'array',
+        description: 'comma-separated list of relationships to include',
+        items: {
+          type: 'string',
+          enum: ['appCustomProductPage', 'appCustomProductPageLocalizations'],
+        },
+      },
+      limit: {
+        type: 'integer',
+        description: 'maximum resources per page',
+      },
+      'limit[appCustomProductPageLocalizations]': {
+        type: 'integer',
+        description:
+          'maximum number of related appCustomProductPageLocalizations returned (when they are included)',
+      },
+    },
+  },
+};
+
+export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
+  const { id, ...body } = args as any;
+  return asTextContentResult(await client.appCustomProductPages.listVersions(id, body));
+};
+
+export default { metadata, tool, handler };

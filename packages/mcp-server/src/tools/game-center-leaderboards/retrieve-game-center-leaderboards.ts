@@ -1,0 +1,120 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import { asTextContentResult } from 'app-store-connect-mcp/tools/types';
+
+import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { Metadata } from '../';
+import AppStoreConnectAPI from 'app-store-connect-api';
+
+export const metadata: Metadata = {
+  resource: 'game_center_leaderboards',
+  operation: 'read',
+  tags: [],
+  httpMethod: 'get',
+  httpPath: '/v1/gameCenterLeaderboards/{id}',
+  operationId: 'gameCenterLeaderboards_getInstance',
+};
+
+export const tool: Tool = {
+  name: 'retrieve_game_center_leaderboards',
+  description: '',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      id: {
+        type: 'string',
+      },
+      'fields[gameCenterLeaderboardLocalizations]': {
+        type: 'array',
+        description:
+          'the fields to include for returned resources of type gameCenterLeaderboardLocalizations',
+        items: {
+          type: 'string',
+          enum: [
+            'locale',
+            'name',
+            'formatterOverride',
+            'formatterSuffix',
+            'formatterSuffixSingular',
+            'gameCenterLeaderboard',
+            'gameCenterLeaderboardImage',
+          ],
+        },
+      },
+      'fields[gameCenterLeaderboardReleases]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboardReleases',
+        items: {
+          type: 'string',
+          enum: ['live', 'gameCenterDetail', 'gameCenterLeaderboard'],
+        },
+      },
+      'fields[gameCenterLeaderboards]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboards',
+        items: {
+          type: 'string',
+          enum: [
+            'defaultFormatter',
+            'referenceName',
+            'vendorIdentifier',
+            'submissionType',
+            'scoreSortType',
+            'scoreRangeStart',
+            'scoreRangeEnd',
+            'recurrenceStartDate',
+            'recurrenceDuration',
+            'recurrenceRule',
+            'archived',
+            'activityProperties',
+            'visibility',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'groupLeaderboard',
+            'gameCenterLeaderboardSets',
+            'localizations',
+            'releases',
+            'activity',
+            'challenge',
+          ],
+        },
+      },
+      include: {
+        type: 'array',
+        description: 'comma-separated list of relationships to include',
+        items: {
+          type: 'string',
+          enum: [
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'groupLeaderboard',
+            'gameCenterLeaderboardSets',
+            'localizations',
+            'releases',
+            'activity',
+            'challenge',
+          ],
+        },
+      },
+      'limit[gameCenterLeaderboardSets]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterLeaderboardSets returned (when they are included)',
+      },
+      'limit[localizations]': {
+        type: 'integer',
+        description: 'maximum number of related localizations returned (when they are included)',
+      },
+      'limit[releases]': {
+        type: 'integer',
+        description: 'maximum number of related releases returned (when they are included)',
+      },
+    },
+  },
+};
+
+export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
+  const { id, ...body } = args as any;
+  return asTextContentResult(await client.gameCenterLeaderboards.retrieve(id, body));
+};
+
+export default { metadata, tool, handler };

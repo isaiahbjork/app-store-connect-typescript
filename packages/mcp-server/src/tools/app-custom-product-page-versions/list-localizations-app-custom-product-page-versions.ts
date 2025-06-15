@@ -1,0 +1,113 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import { asTextContentResult } from 'app-store-connect-mcp/tools/types';
+
+import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { Metadata } from '../';
+import AppStoreConnectAPI from 'app-store-connect-api';
+
+export const metadata: Metadata = {
+  resource: 'app_custom_product_page_versions',
+  operation: 'read',
+  tags: [],
+  httpMethod: 'get',
+  httpPath: '/v1/appCustomProductPageVersions/{id}/appCustomProductPageLocalizations',
+  operationId: 'appCustomProductPageVersions_appCustomProductPageLocalizations_getToManyRelated',
+};
+
+export const tool: Tool = {
+  name: 'list_localizations_app_custom_product_page_versions',
+  description: '',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      id: {
+        type: 'string',
+      },
+      'fields[appCustomProductPageLocalizations]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appCustomProductPageLocalizations',
+        items: {
+          type: 'string',
+          enum: [
+            'locale',
+            'promotionalText',
+            'appCustomProductPageVersion',
+            'appScreenshotSets',
+            'appPreviewSets',
+          ],
+        },
+      },
+      'fields[appCustomProductPageVersions]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appCustomProductPageVersions',
+        items: {
+          type: 'string',
+          enum: ['version', 'state', 'deepLink', 'appCustomProductPage', 'appCustomProductPageLocalizations'],
+        },
+      },
+      'fields[appPreviewSets]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appPreviewSets',
+        items: {
+          type: 'string',
+          enum: [
+            'previewType',
+            'appStoreVersionLocalization',
+            'appCustomProductPageLocalization',
+            'appStoreVersionExperimentTreatmentLocalization',
+            'appPreviews',
+          ],
+        },
+      },
+      'fields[appScreenshotSets]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appScreenshotSets',
+        items: {
+          type: 'string',
+          enum: [
+            'screenshotDisplayType',
+            'appStoreVersionLocalization',
+            'appCustomProductPageLocalization',
+            'appStoreVersionExperimentTreatmentLocalization',
+            'appScreenshots',
+          ],
+        },
+      },
+      'filter[locale]': {
+        type: 'array',
+        description: "filter by attribute 'locale'",
+        items: {
+          type: 'string',
+        },
+      },
+      include: {
+        type: 'array',
+        description: 'comma-separated list of relationships to include',
+        items: {
+          type: 'string',
+          enum: ['appCustomProductPageVersion', 'appScreenshotSets', 'appPreviewSets'],
+        },
+      },
+      limit: {
+        type: 'integer',
+        description: 'maximum resources per page',
+      },
+      'limit[appPreviewSets]': {
+        type: 'integer',
+        description: 'maximum number of related appPreviewSets returned (when they are included)',
+      },
+      'limit[appScreenshotSets]': {
+        type: 'integer',
+        description: 'maximum number of related appScreenshotSets returned (when they are included)',
+      },
+    },
+  },
+};
+
+export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
+  const { id, ...body } = args as any;
+  return asTextContentResult(await client.appCustomProductPageVersions.listLocalizations(id, body));
+};
+
+export default { metadata, tool, handler };

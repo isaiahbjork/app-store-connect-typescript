@@ -1,0 +1,422 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import { asTextContentResult } from 'app-store-connect-mcp/tools/types';
+
+import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { Metadata } from '../';
+import AppStoreConnectAPI from 'app-store-connect-api';
+
+export const metadata: Metadata = {
+  resource: 'game_center_groups',
+  operation: 'read',
+  tags: [],
+  httpMethod: 'get',
+  httpPath: '/v1/gameCenterGroups/{id}/gameCenterDetails',
+  operationId: 'gameCenterGroups_gameCenterDetails_getToManyRelated',
+};
+
+export const tool: Tool = {
+  name: 'retrieve_game_center_details_game_center_groups',
+  description: '',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      id: {
+        type: 'string',
+      },
+      'fields[apps]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type apps',
+        items: {
+          type: 'string',
+          enum: [
+            'accessibilityUrl',
+            'name',
+            'bundleId',
+            'sku',
+            'primaryLocale',
+            'isOrEverWasMadeForKids',
+            'subscriptionStatusUrl',
+            'subscriptionStatusUrlVersion',
+            'subscriptionStatusUrlForSandbox',
+            'subscriptionStatusUrlVersionForSandbox',
+            'contentRightsDeclaration',
+            'streamlinedPurchasingEnabled',
+            'accessibilityDeclarations',
+            'appEncryptionDeclarations',
+            'ciProduct',
+            'betaTesters',
+            'betaGroups',
+            'appStoreVersions',
+            'preReleaseVersions',
+            'betaAppLocalizations',
+            'builds',
+            'betaLicenseAgreement',
+            'betaAppReviewDetail',
+            'appInfos',
+            'appClips',
+            'appPricePoints',
+            'endUserLicenseAgreement',
+            'appPriceSchedule',
+            'appAvailabilityV2',
+            'inAppPurchases',
+            'subscriptionGroups',
+            'gameCenterEnabledVersions',
+            'perfPowerMetrics',
+            'appCustomProductPages',
+            'inAppPurchasesV2',
+            'promotedPurchases',
+            'appEvents',
+            'reviewSubmissions',
+            'subscriptionGracePeriod',
+            'customerReviews',
+            'customerReviewSummarizations',
+            'gameCenterDetail',
+            'appStoreVersionExperimentsV2',
+            'alternativeDistributionKey',
+            'analyticsReportRequests',
+            'marketplaceSearchDetail',
+            'backgroundAssets',
+            'betaFeedbackScreenshotSubmissions',
+            'betaFeedbackCrashSubmissions',
+            'webhooks',
+          ],
+        },
+      },
+      'fields[appStoreVersions]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type appStoreVersions',
+        items: {
+          type: 'string',
+          enum: [
+            'platform',
+            'versionString',
+            'appStoreState',
+            'appVersionState',
+            'copyright',
+            'reviewType',
+            'releaseType',
+            'earliestReleaseDate',
+            'usesIdfa',
+            'downloadable',
+            'createdDate',
+            'app',
+            'ageRatingDeclaration',
+            'appStoreVersionLocalizations',
+            'build',
+            'appStoreVersionPhasedRelease',
+            'gameCenterAppVersion',
+            'routingAppCoverage',
+            'appStoreReviewDetail',
+            'appStoreVersionSubmission',
+            'appClipDefaultExperience',
+            'appStoreVersionExperiments',
+            'appStoreVersionExperimentsV2',
+            'customerReviews',
+            'alternativeDistributionPackage',
+          ],
+        },
+      },
+      'fields[gameCenterAchievementReleases]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterAchievementReleases',
+        items: {
+          type: 'string',
+          enum: ['live', 'gameCenterDetail', 'gameCenterAchievement'],
+        },
+      },
+      'fields[gameCenterAchievements]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterAchievements',
+        items: {
+          type: 'string',
+          enum: [
+            'referenceName',
+            'vendorIdentifier',
+            'points',
+            'showBeforeEarned',
+            'repeatable',
+            'archived',
+            'activityProperties',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'groupAchievement',
+            'localizations',
+            'releases',
+            'activity',
+          ],
+        },
+      },
+      'fields[gameCenterActivities]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterActivities',
+        items: {
+          type: 'string',
+          enum: [
+            'referenceName',
+            'vendorIdentifier',
+            'playStyle',
+            'minimumPlayersCount',
+            'maximumPlayersCount',
+            'supportsPartyCode',
+            'archived',
+            'properties',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'achievements',
+            'leaderboards',
+            'versions',
+          ],
+        },
+      },
+      'fields[gameCenterActivityVersionReleases]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterActivityVersionReleases',
+        items: {
+          type: 'string',
+          enum: ['version'],
+        },
+      },
+      'fields[gameCenterAppVersions]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterAppVersions',
+        items: {
+          type: 'string',
+          enum: ['enabled', 'compatibilityVersions', 'appStoreVersion'],
+        },
+      },
+      'fields[gameCenterChallenges]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterChallenges',
+        items: {
+          type: 'string',
+          enum: [
+            'referenceName',
+            'vendorIdentifier',
+            'allowedDurations',
+            'archived',
+            'challengeType',
+            'repeatable',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'versions',
+            'leaderboard',
+          ],
+        },
+      },
+      'fields[gameCenterChallengeVersionReleases]': {
+        type: 'array',
+        description:
+          'the fields to include for returned resources of type gameCenterChallengeVersionReleases',
+        items: {
+          type: 'string',
+          enum: ['version'],
+        },
+      },
+      'fields[gameCenterDetails]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterDetails',
+        items: {
+          type: 'string',
+          enum: [
+            'arcadeEnabled',
+            'challengeEnabled',
+            'app',
+            'gameCenterAppVersions',
+            'gameCenterGroup',
+            'gameCenterLeaderboards',
+            'gameCenterLeaderboardSets',
+            'gameCenterAchievements',
+            'gameCenterActivities',
+            'gameCenterChallenges',
+            'defaultLeaderboard',
+            'defaultGroupLeaderboard',
+            'achievementReleases',
+            'activityReleases',
+            'challengeReleases',
+            'leaderboardReleases',
+            'leaderboardSetReleases',
+            'challengesMinimumPlatformVersions',
+          ],
+        },
+      },
+      'fields[gameCenterGroups]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterGroups',
+        items: {
+          type: 'string',
+          enum: [
+            'referenceName',
+            'gameCenterDetails',
+            'gameCenterLeaderboards',
+            'gameCenterLeaderboardSets',
+            'gameCenterAchievements',
+            'gameCenterActivities',
+            'gameCenterChallenges',
+          ],
+        },
+      },
+      'fields[gameCenterLeaderboardReleases]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboardReleases',
+        items: {
+          type: 'string',
+          enum: ['live', 'gameCenterDetail', 'gameCenterLeaderboard'],
+        },
+      },
+      'fields[gameCenterLeaderboards]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboards',
+        items: {
+          type: 'string',
+          enum: [
+            'defaultFormatter',
+            'referenceName',
+            'vendorIdentifier',
+            'submissionType',
+            'scoreSortType',
+            'scoreRangeStart',
+            'scoreRangeEnd',
+            'recurrenceStartDate',
+            'recurrenceDuration',
+            'recurrenceRule',
+            'archived',
+            'activityProperties',
+            'visibility',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'groupLeaderboard',
+            'gameCenterLeaderboardSets',
+            'localizations',
+            'releases',
+            'activity',
+            'challenge',
+          ],
+        },
+      },
+      'fields[gameCenterLeaderboardSetReleases]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboardSetReleases',
+        items: {
+          type: 'string',
+          enum: ['live', 'gameCenterDetail', 'gameCenterLeaderboardSet'],
+        },
+      },
+      'fields[gameCenterLeaderboardSets]': {
+        type: 'array',
+        description: 'the fields to include for returned resources of type gameCenterLeaderboardSets',
+        items: {
+          type: 'string',
+          enum: [
+            'referenceName',
+            'vendorIdentifier',
+            'gameCenterDetail',
+            'gameCenterGroup',
+            'groupLeaderboardSet',
+            'localizations',
+            'gameCenterLeaderboards',
+            'releases',
+          ],
+        },
+      },
+      'filter[gameCenterAppVersions': {
+        type: 'object',
+        properties: {
+          'enabled]': {
+            type: 'array',
+            description: "filter by attribute 'gameCenterAppVersions.enabled'",
+            items: {
+              type: 'string',
+            },
+          },
+        },
+        required: [],
+      },
+      include: {
+        type: 'array',
+        description: 'comma-separated list of relationships to include',
+        items: {
+          type: 'string',
+          enum: [
+            'app',
+            'gameCenterAppVersions',
+            'gameCenterGroup',
+            'gameCenterLeaderboards',
+            'gameCenterLeaderboardSets',
+            'gameCenterAchievements',
+            'gameCenterActivities',
+            'gameCenterChallenges',
+            'defaultLeaderboard',
+            'defaultGroupLeaderboard',
+            'achievementReleases',
+            'activityReleases',
+            'challengeReleases',
+            'leaderboardReleases',
+            'leaderboardSetReleases',
+            'challengesMinimumPlatformVersions',
+          ],
+        },
+      },
+      limit: {
+        type: 'integer',
+        description: 'maximum resources per page',
+      },
+      'limit[achievementReleases]': {
+        type: 'integer',
+        description: 'maximum number of related achievementReleases returned (when they are included)',
+      },
+      'limit[activityReleases]': {
+        type: 'integer',
+        description: 'maximum number of related activityReleases returned (when they are included)',
+      },
+      'limit[challengeReleases]': {
+        type: 'integer',
+        description: 'maximum number of related challengeReleases returned (when they are included)',
+      },
+      'limit[challengesMinimumPlatformVersions]': {
+        type: 'integer',
+        description:
+          'maximum number of related challengesMinimumPlatformVersions returned (when they are included)',
+      },
+      'limit[gameCenterAchievements]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterAchievements returned (when they are included)',
+      },
+      'limit[gameCenterActivities]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterActivities returned (when they are included)',
+      },
+      'limit[gameCenterAppVersions]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterAppVersions returned (when they are included)',
+      },
+      'limit[gameCenterChallenges]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterChallenges returned (when they are included)',
+      },
+      'limit[gameCenterLeaderboards]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterLeaderboards returned (when they are included)',
+      },
+      'limit[gameCenterLeaderboardSets]': {
+        type: 'integer',
+        description: 'maximum number of related gameCenterLeaderboardSets returned (when they are included)',
+      },
+      'limit[leaderboardReleases]': {
+        type: 'integer',
+        description: 'maximum number of related leaderboardReleases returned (when they are included)',
+      },
+      'limit[leaderboardSetReleases]': {
+        type: 'integer',
+        description: 'maximum number of related leaderboardSetReleases returned (when they are included)',
+      },
+    },
+  },
+};
+
+export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
+  const { id, ...body } = args as any;
+  return asTextContentResult(await client.gameCenterGroups.retrieveGameCenterDetails(id, body));
+};
+
+export default { metadata, tool, handler };

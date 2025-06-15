@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "app-store-connect-mcp/*": ["dist/src/*"],
-      "app-store-connect-mcp": ["dist/src/index.ts"]
+      "app-store-connect-api-mcp/*": ["dist/src/*"],
+      "app-store-connect-api-mcp": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

@@ -9,8 +9,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/app-store-connect-api-typescript.git
-cd app-store-connect-api-typescript
+git clone git@github.com:isaiahbjork/app-store-connect-typescript.git
+cd app-store-connect-typescript
 ./scripts/bootstrap
 ./scripts/build
 ```
@@ -41,7 +41,7 @@ For clients with a configuration JSON, it might look something like this:
     "app_store_connect_api_api": {
       "command": "node",
       "args": [
-        "/path/to/local/app-store-connect-api-typescript/packages/mcp-server",
+        "/path/to/local/app-store-connect-typescript/packages/mcp-server",
         "--client=claude",
         "--tools=dynamic"
       ],

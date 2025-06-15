@@ -24,7 +24,7 @@ node ./packages/mcp-server/dist/index.js
 ```
 
 > [!NOTE]
-> Once this package is [published to npm](https://app.stainless.com/docs/guides/publish), this will become: `npx -y app-store-connect-mcp`
+> Once this package is [published to npm](https://app.stainless.com/docs/guides/publish), this will become: `npx -y app-store-connect-api-mcp`
 
 ### Via MCP Client
 
@@ -149,10 +149,10 @@ over time, you can manually enable or disable certain capabilities:
 
 ```js
 // Import the server, generated endpoints, or the init function
-import { server, endpoints, init } from "app-store-connect-mcp/server";
+import { server, endpoints, init } from "app-store-connect-api-mcp/server";
 
 // import a specific tool
-import createAccessibilityDeclarations from "app-store-connect-mcp/tools/accessibility-declarations/create-accessibility-declarations";
+import createAccessibilityDeclarations from "app-store-connect-api-mcp/tools/accessibility-declarations/create-accessibility-declarations";
 
 // initialize the server and all endpoints
 init({ server, endpoints });

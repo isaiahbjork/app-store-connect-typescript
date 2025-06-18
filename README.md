@@ -1,6 +1,6 @@
 # App Store Connect API TypeScript API Library
 
-[![NPM version](https://img.shields.io/npm/v/app-store-connect-api.svg)](https://npmjs.org/package/app-store-connect-api) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/app-store-connect-api)
+[![NPM version](<https://img.shields.io/npm/v/app-store-connect-api.svg?label=npm%20(stable)>)](https://npmjs.org/package/app-store-connect-api) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/app-store-connect-api)
 
 This library provides convenient access to the App Store Connect API REST API from server-side TypeScript or JavaScript.
 

@@ -87,7 +87,7 @@ export namespace GameCenterActivity {
 
     playStyle?: 'ASYNCHRONOUS' | 'SYNCHRONOUS';
 
-    properties?: Record<string, string>;
+    properties?: { [key: string]: string };
 
     referenceName?: string;
 
@@ -237,7 +237,7 @@ export namespace GameCenterActivityCreateParams {
 
       playStyle?: 'ASYNCHRONOUS' | 'SYNCHRONOUS';
 
-      properties?: Record<string, string>;
+      properties?: { [key: string]: string };
 
       supportsPartyCode?: boolean;
     }
@@ -347,7 +347,7 @@ export namespace GameCenterActivityUpdateParams {
 
       playStyle?: 'ASYNCHRONOUS' | 'SYNCHRONOUS';
 
-      properties?: Record<string, string>;
+      properties?: { [key: string]: string };
 
       referenceName?: string;
 

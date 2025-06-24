@@ -85,7 +85,7 @@ export interface AchievementRecord {
 
 export namespace AchievementRecord {
   export interface Attributes {
-    activityProperties?: Record<string, string>;
+    activityProperties?: { [key: string]: string };
 
     archived?: boolean;
 
@@ -267,7 +267,7 @@ export namespace GameCenterAchievementCreateParams {
 
       vendorIdentifier: string;
 
-      activityProperties?: Record<string, string>;
+      activityProperties?: { [key: string]: string };
     }
 
     export interface Relationships {
@@ -376,7 +376,7 @@ export namespace GameCenterAchievementUpdateParams {
 
   export namespace Data {
     export interface Attributes {
-      activityProperties?: Record<string, string>;
+      activityProperties?: { [key: string]: string };
 
       archived?: boolean;
 

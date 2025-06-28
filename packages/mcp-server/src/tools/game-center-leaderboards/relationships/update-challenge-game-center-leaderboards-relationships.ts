@@ -43,8 +43,8 @@ export const tool: Tool = {
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
   const { id, ...body } = args as any;
-  await client.gameCenterLeaderboards.relationships.updateChallenge(id, body);
-  return asTextContentResult('Successful tool call');
+  const response = await client.gameCenterLeaderboards.relationships.updateChallenge(id, body).asResponse();
+  return asTextContentResult(await response.text());
 };
 
 export default { metadata, tool, handler };

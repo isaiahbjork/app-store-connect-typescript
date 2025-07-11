@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 
 export const tool: Tool = {
   name: 'list_app_screenshot_sets_app_store_version_experiment_treatment_localizations',
-  description: '',
+  description:
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\n",
   inputSchema: {
     type: 'object',
     properties: {

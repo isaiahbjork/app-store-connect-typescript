@@ -28,11 +28,7 @@ export const server = new McpServer(
     name: 'app_store_connect_api_api',
     version: '0.1.0-alpha.2',
   },
-  {
-    capabilities: {
-      tools: {},
-    },
-  },
+  { capabilities: { tools: {} } },
 );
 
 /**

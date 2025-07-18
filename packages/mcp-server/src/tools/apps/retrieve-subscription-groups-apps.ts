@@ -98,7 +98,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       include: {
         type: 'array',
@@ -130,6 +129,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id'],
   },
 };
 

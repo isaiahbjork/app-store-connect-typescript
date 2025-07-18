@@ -75,7 +75,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               appStoreVersionTemplate: {
                 type: 'object',
@@ -94,7 +93,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               customProductPageTemplate: {
                 type: 'object',
@@ -113,7 +111,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['app'],
@@ -171,10 +168,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['attributes', 'type'],
@@ -196,7 +191,6 @@ export const tool: Tool = {
                       type: 'string',
                     },
                   },
-                  required: [],
                 },
                 relationships: {
                   type: 'object',
@@ -218,7 +212,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     appCustomProductPageLocalizations: {
                       type: 'object',
@@ -240,10 +233,8 @@ export const tool: Tool = {
                           },
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['type'],
@@ -252,6 +243,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['data'],
   },
 };
 

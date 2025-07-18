@@ -324,6 +324,7 @@ export const tool: Tool = {
         description: 'maximum number of related individualTesters returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

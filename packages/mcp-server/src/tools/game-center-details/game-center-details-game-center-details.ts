@@ -60,12 +60,12 @@ export const tool: Tool = {
                 type: 'boolean',
               },
             },
-            required: [],
           },
         },
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

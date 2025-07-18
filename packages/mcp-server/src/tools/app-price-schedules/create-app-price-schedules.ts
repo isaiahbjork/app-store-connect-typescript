@@ -121,6 +121,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['data'],
     $defs: {
       territory_inline_create: {
         type: 'object',

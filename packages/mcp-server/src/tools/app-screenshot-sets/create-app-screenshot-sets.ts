@@ -57,7 +57,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperimentTreatmentLocalization: {
                 type: 'object',
@@ -76,7 +75,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionLocalization: {
                 type: 'object',
@@ -95,15 +93,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       screenshot_display_type: {
         type: 'string',

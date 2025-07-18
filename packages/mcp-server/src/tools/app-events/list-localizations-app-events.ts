@@ -118,6 +118,7 @@ export const tool: Tool = {
         description: 'maximum number of related appEventVideoClips returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

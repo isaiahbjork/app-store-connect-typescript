@@ -44,12 +44,12 @@ export const tool: Tool = {
                 type: 'boolean',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

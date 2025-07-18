@@ -41,7 +41,6 @@ export const tool: Tool = {
                 $ref: '#/$defs/app_clip_action',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -63,15 +62,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       app_clip_action: {
         type: 'string',

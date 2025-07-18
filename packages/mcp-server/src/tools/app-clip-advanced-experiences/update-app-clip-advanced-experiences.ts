@@ -100,14 +100,12 @@ export const tool: Tool = {
                             type: 'number',
                           },
                         },
-                        required: [],
                       },
                       source: {
                         type: 'string',
                         enum: ['CALCULATED', 'MANUALLY_PLACED'],
                       },
                     },
-                    required: [],
                   },
                   homePage: {
                     type: 'string',
@@ -146,10 +144,8 @@ export const tool: Tool = {
                             },
                           },
                         },
-                        required: [],
                       },
                     },
-                    required: [],
                   },
                   mapAction: {
                     type: 'string',
@@ -216,7 +212,6 @@ export const tool: Tool = {
                         enum: ['FAX', 'LANDLINE', 'MOBILE', 'TOLLFREE'],
                       },
                     },
-                    required: [],
                   },
                   placeId: {
                     type: 'string',
@@ -226,13 +221,11 @@ export const tool: Tool = {
                     enum: ['OWNER', 'AUTHORIZED', 'OTHER'],
                   },
                 },
-                required: [],
               },
               removed: {
                 type: 'boolean',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -254,7 +247,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               headerImage: {
                 type: 'object',
@@ -273,7 +265,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               localizations: {
                 type: 'object',
@@ -295,10 +286,8 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
@@ -310,6 +299,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id', 'data'],
     $defs: {
       app_clip_action: {
         type: 'string',
@@ -375,7 +365,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['type'],

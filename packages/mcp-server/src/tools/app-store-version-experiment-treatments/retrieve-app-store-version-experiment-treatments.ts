@@ -68,6 +68,7 @@ export const tool: Tool = {
           'maximum number of related appStoreVersionExperimentTreatmentLocalizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

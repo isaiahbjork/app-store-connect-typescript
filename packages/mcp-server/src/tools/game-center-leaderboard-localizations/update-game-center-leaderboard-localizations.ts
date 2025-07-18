@@ -50,12 +50,12 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       leaderboard_formatter: {
         type: 'string',

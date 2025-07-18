@@ -128,6 +128,7 @@ export const tool: Tool = {
           'maximum number of related appStoreVersionExperimentTreatments returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

@@ -85,6 +85,7 @@ export const tool: Tool = {
         description: 'maximum number of related teams returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

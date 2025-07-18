@@ -71,6 +71,7 @@ export const tool: Tool = {
         description: 'maximum number of related appStoreReviewAttachments returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

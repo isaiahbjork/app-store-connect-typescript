@@ -176,6 +176,7 @@ export const tool: Tool = {
         description: 'maximum number of related appScreenshots returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

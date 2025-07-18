@@ -60,7 +60,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperimentV2: {
                 type: 'object',
@@ -79,15 +78,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

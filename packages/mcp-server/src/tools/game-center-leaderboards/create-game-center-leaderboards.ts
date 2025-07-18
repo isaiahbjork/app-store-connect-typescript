@@ -100,7 +100,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               gameCenterGroup: {
                 type: 'object',
@@ -119,7 +118,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               gameCenterLeaderboardSets: {
                 type: 'object',
@@ -141,15 +139,14 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       leaderboard_formatter: {
         type: 'string',

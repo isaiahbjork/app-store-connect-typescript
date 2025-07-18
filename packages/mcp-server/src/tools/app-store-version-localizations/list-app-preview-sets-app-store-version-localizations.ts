@@ -162,6 +162,7 @@ export const tool: Tool = {
         description: 'maximum number of related appPreviews returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

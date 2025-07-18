@@ -88,7 +88,6 @@ export const tool: Tool = {
                       },
                     },
                   },
-                  required: [],
                 },
               },
             },
@@ -127,6 +126,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

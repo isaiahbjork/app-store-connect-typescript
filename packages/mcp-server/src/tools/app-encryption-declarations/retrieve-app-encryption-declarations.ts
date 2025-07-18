@@ -138,6 +138,7 @@ export const tool: Tool = {
         description: 'maximum number of related builds returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

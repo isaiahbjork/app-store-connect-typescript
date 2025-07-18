@@ -78,15 +78,14 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       user_role: {
         type: 'string',

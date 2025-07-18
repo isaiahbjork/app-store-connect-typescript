@@ -54,12 +54,12 @@ export const tool: Tool = {
                 $ref: '#/$defs/territory_code',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       territory_code: {
         type: 'string',

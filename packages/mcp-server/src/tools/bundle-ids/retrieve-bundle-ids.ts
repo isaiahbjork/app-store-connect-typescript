@@ -136,6 +136,7 @@ export const tool: Tool = {
         description: 'maximum number of related profiles returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

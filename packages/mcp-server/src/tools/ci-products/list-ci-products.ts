@@ -148,6 +148,7 @@ export const tool: Tool = {
         description: 'maximum number of related primaryRepositories returned (when they are included)',
       },
     },
+    required: [],
   },
 };
 

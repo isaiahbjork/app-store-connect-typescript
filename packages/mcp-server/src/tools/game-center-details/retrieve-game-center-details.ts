@@ -301,6 +301,7 @@ export const tool: Tool = {
         description: 'maximum number of related leaderboardSetReleases returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

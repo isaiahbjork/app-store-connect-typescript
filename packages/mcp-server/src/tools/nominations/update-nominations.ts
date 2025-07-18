@@ -92,7 +92,6 @@ export const tool: Tool = {
                 enum: ['APP_LAUNCH', 'APP_ENHANCEMENTS', 'NEW_CONTENT'],
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -117,7 +116,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               relatedApps: {
                 type: 'object',
@@ -139,7 +137,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               supportedTerritories: {
                 type: 'object',
@@ -161,15 +158,14 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       device_family: {
         type: 'string',

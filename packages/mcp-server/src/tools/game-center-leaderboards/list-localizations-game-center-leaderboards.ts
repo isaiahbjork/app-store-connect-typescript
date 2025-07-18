@@ -99,6 +99,7 @@ export const tool: Tool = {
         description: 'maximum resources per page',
       },
     },
+    required: ['id'],
   },
 };
 

@@ -75,7 +75,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               subscription: {
                 type: 'object',
@@ -94,7 +93,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['app'],
@@ -107,6 +105,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

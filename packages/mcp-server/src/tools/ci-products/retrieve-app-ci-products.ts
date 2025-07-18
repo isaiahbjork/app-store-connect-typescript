@@ -566,6 +566,7 @@ export const tool: Tool = {
         description: 'maximum number of related subscriptionGroups returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

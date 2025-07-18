@@ -60,12 +60,12 @@ export const tool: Tool = {
                 $ref: '#/$defs/platform',
               },
             },
-            required: [],
           },
         },
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       platform: {
         type: 'string',

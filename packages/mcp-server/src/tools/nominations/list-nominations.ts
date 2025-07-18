@@ -126,6 +126,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['filter[state]'],
   },
 };
 

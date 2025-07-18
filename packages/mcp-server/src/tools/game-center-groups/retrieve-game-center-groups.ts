@@ -217,6 +217,7 @@ export const tool: Tool = {
         description: 'maximum number of related gameCenterLeaderboardSets returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

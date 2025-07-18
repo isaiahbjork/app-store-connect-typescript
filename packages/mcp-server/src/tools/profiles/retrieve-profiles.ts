@@ -95,6 +95,7 @@ export const tool: Tool = {
         description: 'maximum number of related devices returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

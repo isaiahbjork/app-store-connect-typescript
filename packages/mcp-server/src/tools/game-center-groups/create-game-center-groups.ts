@@ -35,12 +35,12 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['type'],
       },
     },
+    required: ['data'],
   },
 };
 

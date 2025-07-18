@@ -63,7 +63,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appEvent: {
                 type: 'object',
@@ -82,7 +81,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersion: {
                 type: 'object',
@@ -101,7 +99,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperiment: {
                 type: 'object',
@@ -120,7 +117,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperimentV2: {
                 type: 'object',
@@ -139,7 +135,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['reviewSubmission'],
@@ -152,6 +147,7 @@ export const tool: Tool = {
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

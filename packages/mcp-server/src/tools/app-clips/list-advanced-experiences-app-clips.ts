@@ -118,6 +118,7 @@ export const tool: Tool = {
         description: 'maximum number of related localizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

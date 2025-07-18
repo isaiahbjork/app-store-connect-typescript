@@ -124,6 +124,7 @@ export const tool: Tool = {
           'maximum number of related appClipDefaultExperienceLocalizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

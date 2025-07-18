@@ -78,12 +78,12 @@ export const tool: Tool = {
                 enum: ['SHOW_FOR_ALL', 'HIDE_FOR_ALL'],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       leaderboard_formatter: {
         type: 'string',

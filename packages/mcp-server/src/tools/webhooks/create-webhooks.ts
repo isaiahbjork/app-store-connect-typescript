@@ -81,6 +81,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       webhook_event_type: {
         type: 'string',

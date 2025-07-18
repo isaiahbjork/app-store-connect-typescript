@@ -35,7 +35,6 @@ export const tool: Tool = {
                 type: 'boolean',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -57,7 +56,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               pullRequest: {
                 type: 'object',
@@ -76,7 +74,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               sourceBranchOrTag: {
                 type: 'object',
@@ -95,7 +92,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               workflow: {
                 type: 'object',
@@ -114,15 +110,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['type'],
       },
     },
+    required: ['data'],
   },
 };
 

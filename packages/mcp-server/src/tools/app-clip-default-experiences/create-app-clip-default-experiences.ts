@@ -63,7 +63,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               releaseWithAppStoreVersion: {
                 type: 'object',
@@ -82,7 +81,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['appClip'],
@@ -98,12 +96,12 @@ export const tool: Tool = {
                 $ref: '#/$defs/app_clip_action',
               },
             },
-            required: [],
           },
         },
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       app_clip_action: {
         type: 'string',

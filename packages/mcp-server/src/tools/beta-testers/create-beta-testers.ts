@@ -66,7 +66,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               builds: {
                 type: 'object',
@@ -88,15 +87,14 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

@@ -82,12 +82,12 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

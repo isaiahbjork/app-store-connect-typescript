@@ -129,6 +129,7 @@ export const tool: Tool = {
         description: 'maximum number of related appClipDefaultExperiences returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

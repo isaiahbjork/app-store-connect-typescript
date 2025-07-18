@@ -530,7 +530,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[appStoreVersions]': {
         type: 'array',
@@ -588,7 +587,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[sku]': {
         type: 'array',
@@ -711,6 +709,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: [],
   },
 };
 

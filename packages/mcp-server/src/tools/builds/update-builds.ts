@@ -44,7 +44,6 @@ export const tool: Tool = {
                 type: 'boolean',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -66,15 +65,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

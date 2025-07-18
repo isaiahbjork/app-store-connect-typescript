@@ -252,7 +252,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[betaGroups]': {
         type: 'array',
@@ -302,7 +301,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[preReleaseVersion]': {
         type: 'array',
@@ -393,6 +391,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: [],
   },
 };
 

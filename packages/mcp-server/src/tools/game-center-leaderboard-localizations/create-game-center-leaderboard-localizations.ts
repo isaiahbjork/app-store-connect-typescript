@@ -78,6 +78,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       leaderboard_formatter: {
         type: 'string',

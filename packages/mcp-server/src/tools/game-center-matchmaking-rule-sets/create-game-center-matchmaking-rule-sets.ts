@@ -50,6 +50,7 @@ export const tool: Tool = {
         required: ['attributes', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

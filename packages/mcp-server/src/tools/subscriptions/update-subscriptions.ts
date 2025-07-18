@@ -54,7 +54,6 @@ export const tool: Tool = {
                 enum: ['ONE_WEEK', 'ONE_MONTH', 'TWO_MONTHS', 'THREE_MONTHS', 'SIX_MONTHS', 'ONE_YEAR'],
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -79,7 +78,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               prices: {
                 type: 'object',
@@ -101,7 +99,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               promotionalOffers: {
                 type: 'object',
@@ -123,10 +120,8 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
@@ -189,7 +184,6 @@ export const tool: Tool = {
                           },
                         },
                       },
-                      required: [],
                     },
                     subscription: {
                       type: 'object',
@@ -208,10 +202,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['attributes', 'type'],
@@ -237,7 +229,6 @@ export const tool: Tool = {
                       format: 'date',
                     },
                   },
-                  required: [],
                 },
                 relationships: {
                   type: 'object',
@@ -259,7 +250,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     subscriptionPricePoint: {
                       type: 'object',
@@ -278,7 +268,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     territory: {
                       type: 'object',
@@ -297,10 +286,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['type'],
@@ -358,7 +345,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     subscriptionPricePoint: {
                       type: 'object',
@@ -377,7 +363,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     territory: {
                       type: 'object',
@@ -396,10 +381,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['attributes', 'type'],
@@ -408,6 +391,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id', 'data'],
     $defs: {
       subscription_offer_duration: {
         type: 'string',

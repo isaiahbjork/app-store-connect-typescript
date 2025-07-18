@@ -56,12 +56,12 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       webhook_event_type: {
         type: 'string',

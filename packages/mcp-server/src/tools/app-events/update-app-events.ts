@@ -98,16 +98,15 @@ export const tool: Tool = {
                       },
                     },
                   },
-                  required: [],
                 },
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

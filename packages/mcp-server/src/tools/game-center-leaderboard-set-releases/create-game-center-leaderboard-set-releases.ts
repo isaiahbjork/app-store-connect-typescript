@@ -76,6 +76,7 @@ export const tool: Tool = {
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

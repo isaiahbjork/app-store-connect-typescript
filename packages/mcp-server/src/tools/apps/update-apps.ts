@@ -66,12 +66,12 @@ export const tool: Tool = {
                 $ref: '#/$defs/subscription_status_url_version',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       subscription_status_url_version: {
         type: 'string',

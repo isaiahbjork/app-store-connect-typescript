@@ -42,12 +42,12 @@ export const tool: Tool = {
                 format: 'date',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

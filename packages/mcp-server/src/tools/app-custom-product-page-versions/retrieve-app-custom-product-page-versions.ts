@@ -60,6 +60,7 @@ export const tool: Tool = {
           'maximum number of related appCustomProductPageLocalizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

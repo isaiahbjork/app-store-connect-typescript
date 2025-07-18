@@ -126,7 +126,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               supportedTerritories: {
                 type: 'object',
@@ -148,7 +147,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
             required: ['relatedApps'],
@@ -161,6 +159,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       device_family: {
         type: 'string',

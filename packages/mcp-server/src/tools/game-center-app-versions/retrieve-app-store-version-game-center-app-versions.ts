@@ -334,6 +334,7 @@ export const tool: Tool = {
           'maximum number of related appStoreVersionLocalizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

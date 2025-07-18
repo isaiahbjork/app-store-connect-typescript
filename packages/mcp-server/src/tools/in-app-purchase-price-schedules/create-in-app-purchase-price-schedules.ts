@@ -123,7 +123,6 @@ export const tool: Tool = {
                       format: 'date',
                     },
                   },
-                  required: [],
                 },
                 relationships: {
                   type: 'object',
@@ -145,7 +144,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     inAppPurchaseV2: {
                       type: 'object',
@@ -164,10 +162,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['type'],
@@ -179,6 +175,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['data'],
     $defs: {
       territory_inline_create: {
         type: 'object',

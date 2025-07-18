@@ -41,7 +41,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -66,15 +65,14 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

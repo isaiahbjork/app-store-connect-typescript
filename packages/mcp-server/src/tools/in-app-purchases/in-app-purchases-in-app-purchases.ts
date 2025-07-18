@@ -78,6 +78,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       in_app_purchase_type: {
         type: 'string',

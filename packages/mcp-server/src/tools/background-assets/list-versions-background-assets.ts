@@ -78,7 +78,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[state]': {
         type: 'array',
@@ -116,6 +115,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id'],
   },
 };
 

@@ -96,7 +96,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               build: {
                 type: 'object',
@@ -115,7 +114,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['app'],
@@ -128,6 +126,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       platform: {
         type: 'string',

@@ -54,7 +54,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               primarySubcategoryOne: {
                 type: 'object',
@@ -73,7 +72,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               primarySubcategoryTwo: {
                 type: 'object',
@@ -92,7 +90,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               secondaryCategory: {
                 type: 'object',
@@ -111,7 +108,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               secondarySubcategoryOne: {
                 type: 'object',
@@ -130,7 +126,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               secondarySubcategoryTwo: {
                 type: 'object',
@@ -149,15 +144,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

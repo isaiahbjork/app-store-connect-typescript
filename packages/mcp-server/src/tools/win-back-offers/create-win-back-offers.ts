@@ -151,6 +151,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['data'],
     $defs: {
       integer_range: {
         type: 'object',
@@ -162,7 +163,6 @@ export const tool: Tool = {
             type: 'integer',
           },
         },
-        required: [],
       },
       subscription_offer_duration: {
         type: 'string',

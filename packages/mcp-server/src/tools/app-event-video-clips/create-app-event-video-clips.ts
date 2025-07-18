@@ -75,6 +75,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
     $defs: {
       app_event_asset_type: {
         type: 'string',

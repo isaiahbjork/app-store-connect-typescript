@@ -313,6 +313,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id'],
   },
 };
 

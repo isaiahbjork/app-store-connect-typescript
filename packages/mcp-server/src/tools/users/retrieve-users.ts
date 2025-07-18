@@ -112,6 +112,7 @@ export const tool: Tool = {
         description: 'maximum number of related visibleApps returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

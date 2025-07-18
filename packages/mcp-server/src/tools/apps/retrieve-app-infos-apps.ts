@@ -187,6 +187,7 @@ export const tool: Tool = {
         description: 'maximum number of related appInfoLocalizations returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

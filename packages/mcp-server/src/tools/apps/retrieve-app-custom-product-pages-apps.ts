@@ -124,6 +124,7 @@ export const tool: Tool = {
           'maximum number of related appCustomProductPageVersions returned (when they are included)',
       },
     },
+    required: ['id'],
   },
 };
 

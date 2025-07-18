@@ -86,7 +86,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               territory: {
                 type: 'object',
@@ -105,7 +104,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['subscription'],
@@ -134,6 +132,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['data'],
     $defs: {
       subscription_offer_duration: {
         type: 'string',

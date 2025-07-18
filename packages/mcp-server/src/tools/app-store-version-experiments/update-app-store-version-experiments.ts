@@ -47,12 +47,12 @@ export const tool: Tool = {
                 type: 'integer',
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
   },
 };
 

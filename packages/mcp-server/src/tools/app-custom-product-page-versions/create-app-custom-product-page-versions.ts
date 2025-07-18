@@ -66,7 +66,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
             required: ['appCustomProductPage'],
@@ -82,12 +81,12 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

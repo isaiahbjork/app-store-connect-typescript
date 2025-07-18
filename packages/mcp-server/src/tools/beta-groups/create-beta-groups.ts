@@ -93,7 +93,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               builds: {
                 type: 'object',
@@ -115,7 +114,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
             required: ['app'],
@@ -128,6 +126,7 @@ export const tool: Tool = {
         required: ['attributes', 'relationships', 'type'],
       },
     },
+    required: ['data'],
   },
 };
 

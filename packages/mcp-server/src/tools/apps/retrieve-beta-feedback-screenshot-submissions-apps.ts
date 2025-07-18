@@ -117,7 +117,6 @@ export const tool: Tool = {
             },
           },
         },
-        required: [],
       },
       'filter[build]': {
         type: 'array',
@@ -176,6 +175,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id'],
   },
 };
 

@@ -57,10 +57,8 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
@@ -72,6 +70,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id', 'data'],
     $defs: {
       subscription_promotional_offer_price_inline_create: {
         type: 'object',
@@ -103,7 +102,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               territory: {
                 type: 'object',
@@ -122,10 +120,8 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['type'],

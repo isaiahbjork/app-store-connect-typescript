@@ -59,6 +59,9 @@ export const tool: Tool = {
     },
     required: ['filter[regionCode]', 'filter[reportDate]', 'filter[reportType]', 'filter[vendorNumber]'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

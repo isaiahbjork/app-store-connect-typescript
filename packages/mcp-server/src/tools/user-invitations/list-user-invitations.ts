@@ -160,6 +160,9 @@ export const tool: Tool = {
     },
     required: [],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

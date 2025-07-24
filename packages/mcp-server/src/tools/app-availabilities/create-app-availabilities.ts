@@ -113,6 +113,7 @@ export const tool: Tool = {
     },
     required: ['data'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

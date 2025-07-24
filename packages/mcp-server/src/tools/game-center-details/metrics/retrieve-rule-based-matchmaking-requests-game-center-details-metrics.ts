@@ -73,6 +73,9 @@ export const tool: Tool = {
     },
     required: ['id', 'granularity'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

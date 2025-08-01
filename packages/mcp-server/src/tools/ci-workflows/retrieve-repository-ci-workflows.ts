@@ -82,8 +82,10 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
-  const { id, ...body } = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.ciWorkflows.retrieveRepository(id, body)));
+  const { id, jq_filter, ...body } = args as any;
+  return asTextContentResult(
+    await maybeFilter(jq_filter, await client.ciWorkflows.retrieveRepository(id, body)),
+  );
 };
 
 export default { metadata, tool, handler };

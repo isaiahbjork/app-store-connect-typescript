@@ -76,9 +76,9 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {
-  const body = args as any;
+  const { jq_filter, ...body } = args as any;
   return asTextContentResult(
-    await maybeFilter(args, await client.gameCenterLeaderboardEntrySubmissions.create(body)),
+    await maybeFilter(jq_filter, await client.gameCenterLeaderboardEntrySubmissions.create(body)),
   );
 };
 

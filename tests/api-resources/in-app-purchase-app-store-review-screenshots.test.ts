@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.inAppPurchaseAppStoreReviewScreenshots.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.inAppPurchaseAppStoreReviewScreenshots.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.inAppPurchaseAppStoreReviewScreenshots.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -61,7 +61,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.inAppPurchaseAppStoreReviewScreenshots.update('id', {
       data: { id: 'id', type: 'inAppPurchaseAppStoreReviewScreenshots' },
@@ -75,7 +75,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.inAppPurchaseAppStoreReviewScreenshots.update('id', {
       data: {
@@ -86,7 +86,7 @@ describe('resource inAppPurchaseAppStoreReviewScreenshots', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.inAppPurchaseAppStoreReviewScreenshots.delete('id');
     const rawResponse = await responsePromise.asResponse();

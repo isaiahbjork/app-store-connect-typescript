@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appCustomProductPageLocalizations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.create({
       data: {
@@ -28,7 +28,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appCustomProductPageLocalizations.create({
       data: {
@@ -41,7 +41,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -53,7 +53,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -72,7 +72,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.update('id', {
       data: { id: 'id', type: 'appCustomProductPageLocalizations' },
@@ -86,7 +86,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appCustomProductPageLocalizations.update('id', {
       data: {
@@ -97,7 +97,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -109,7 +109,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppPreviewSets', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.listAppPreviewSets('id');
     const rawResponse = await responsePromise.asResponse();
@@ -121,7 +121,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppPreviewSets: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -145,7 +145,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppScreenshotSets', async () => {
     const responsePromise = client.appCustomProductPageLocalizations.listAppScreenshotSets('id');
     const rawResponse = await responsePromise.asResponse();
@@ -157,7 +157,7 @@ describe('resource appCustomProductPageLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppScreenshotSets: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

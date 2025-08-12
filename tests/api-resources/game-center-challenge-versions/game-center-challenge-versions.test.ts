@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterChallengeVersions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterChallengeVersions.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource gameCenterChallengeVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterChallengeVersions.create({
       data: {
@@ -35,7 +35,7 @@ describe('resource gameCenterChallengeVersions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterChallengeVersions.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource gameCenterChallengeVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -66,7 +66,7 @@ describe('resource gameCenterChallengeVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations', async () => {
     const responsePromise = client.gameCenterChallengeVersions.listLocalizations('id');
     const rawResponse = await responsePromise.asResponse();
@@ -78,7 +78,7 @@ describe('resource gameCenterChallengeVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -96,7 +96,7 @@ describe('resource gameCenterChallengeVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDefaultImage', async () => {
     const responsePromise = client.gameCenterChallengeVersions.retrieveDefaultImage('id');
     const rawResponse = await responsePromise.asResponse();
@@ -108,7 +108,7 @@ describe('resource gameCenterChallengeVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDefaultImage: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

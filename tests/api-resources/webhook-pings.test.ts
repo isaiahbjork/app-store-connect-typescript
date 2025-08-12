@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource webhookPings', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.webhookPings.create({
       data: { relationships: { webhook: { data: { id: 'id', type: 'webhooks' } } }, type: 'webhookPings' },
@@ -22,7 +22,7 @@ describe('resource webhookPings', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.webhookPings.create({
       data: { relationships: { webhook: { data: { id: 'id', type: 'webhooks' } } }, type: 'webhookPings' },

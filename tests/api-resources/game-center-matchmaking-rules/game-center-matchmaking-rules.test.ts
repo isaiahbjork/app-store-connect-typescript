@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterMatchmakingRules', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.create({
       data: {
@@ -31,7 +31,7 @@ describe('resource gameCenterMatchmakingRules', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRules.create({
       data: {
@@ -48,7 +48,7 @@ describe('resource gameCenterMatchmakingRules', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.update('id', {
       data: { id: 'id', type: 'gameCenterMatchmakingRules' },
@@ -62,7 +62,7 @@ describe('resource gameCenterMatchmakingRules', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRules.update('id', {
       data: {
@@ -73,7 +73,7 @@ describe('resource gameCenterMatchmakingRules', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.delete('id');
     const rawResponse = await responsePromise.asResponse();

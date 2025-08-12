@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource analyticsReportRequests', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.analyticsReportRequests.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource analyticsReportRequests', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.analyticsReportRequests.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource analyticsReportRequests', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.analyticsReportRequests.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource analyticsReportRequests', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -66,7 +66,7 @@ describe('resource analyticsReportRequests', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.analyticsReportRequests.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -78,7 +78,7 @@ describe('resource analyticsReportRequests', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listReports', async () => {
     const responsePromise = client.analyticsReportRequests.listReports('id');
     const rawResponse = await responsePromise.asResponse();
@@ -90,7 +90,7 @@ describe('resource analyticsReportRequests', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listReports: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

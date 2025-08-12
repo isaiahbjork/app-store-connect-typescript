@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appCustomProductPages', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appCustomProductPages.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource appCustomProductPages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appCustomProductPages.create({
       data: {
@@ -52,7 +52,7 @@ describe('resource appCustomProductPages', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appCustomProductPages.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource appCustomProductPages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -81,7 +81,7 @@ describe('resource appCustomProductPages', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appCustomProductPages.update('id', {
       data: { id: 'id', type: 'appCustomProductPages' },
@@ -95,14 +95,14 @@ describe('resource appCustomProductPages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appCustomProductPages.update('id', {
       data: { id: 'id', type: 'appCustomProductPages', attributes: { name: 'name', visible: true } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appCustomProductPages.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -114,7 +114,7 @@ describe('resource appCustomProductPages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listVersions', async () => {
     const responsePromise = client.appCustomProductPages.listVersions('id');
     const rawResponse = await responsePromise.asResponse();
@@ -126,7 +126,7 @@ describe('resource appCustomProductPages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listVersions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

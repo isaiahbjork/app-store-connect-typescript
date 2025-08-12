@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterMatchmakingRuleSets', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRuleSets.create({
       data: {
@@ -35,7 +35,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -68,7 +68,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.update('id', {
       data: { id: 'id', type: 'gameCenterMatchmakingRuleSets' },
@@ -82,14 +82,14 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRuleSets.update('id', {
       data: { id: 'id', type: 'gameCenterMatchmakingRuleSets', attributes: { maxPlayers: 0, minPlayers: 0 } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.list();
     const rawResponse = await responsePromise.asResponse();
@@ -101,7 +101,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -122,7 +122,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -134,7 +134,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listMatchmakingQueues', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.listMatchmakingQueues('id');
     const rawResponse = await responsePromise.asResponse();
@@ -146,7 +146,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listMatchmakingQueues: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -163,7 +163,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listRules', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.listRules('id');
     const rawResponse = await responsePromise.asResponse();
@@ -175,7 +175,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listRules: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -187,7 +187,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listTeams', async () => {
     const responsePromise = client.gameCenterMatchmakingRuleSets.listTeams('id');
     const rawResponse = await responsePromise.asResponse();
@@ -199,7 +199,7 @@ describe('resource gameCenterMatchmakingRuleSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listTeams: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

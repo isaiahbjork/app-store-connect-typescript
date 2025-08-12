@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaAppClipInvocationLocalizations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.betaAppClipInvocationLocalizations.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource betaAppClipInvocationLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.betaAppClipInvocationLocalizations.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource betaAppClipInvocationLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.betaAppClipInvocationLocalizations.update('id', {
       data: { id: 'id', type: 'betaAppClipInvocationLocalizations' },
@@ -51,14 +51,14 @@ describe('resource betaAppClipInvocationLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.betaAppClipInvocationLocalizations.update('id', {
       data: { id: 'id', type: 'betaAppClipInvocationLocalizations', attributes: { title: 'title' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.betaAppClipInvocationLocalizations.delete('id');
     const rawResponse = await responsePromise.asResponse();

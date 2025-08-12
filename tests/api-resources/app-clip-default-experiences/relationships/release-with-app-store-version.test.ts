@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource releaseWithAppStoreVersion', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise =
       client.appClipDefaultExperiences.relationships.releaseWithAppStoreVersion.retrieve('id');
@@ -21,7 +21,7 @@ describe('resource releaseWithAppStoreVersion', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appClipDefaultExperiences.relationships.releaseWithAppStoreVersion.update(
       'id',
@@ -36,7 +36,7 @@ describe('resource releaseWithAppStoreVersion', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appClipDefaultExperiences.relationships.releaseWithAppStoreVersion.update(
       'id',

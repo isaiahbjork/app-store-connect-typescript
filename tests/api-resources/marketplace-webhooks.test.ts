@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource marketplaceWebhooks', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.marketplaceWebhooks.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource marketplaceWebhooks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.marketplaceWebhooks.create({
       data: {
@@ -35,7 +35,7 @@ describe('resource marketplaceWebhooks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.marketplaceWebhooks.update('id', {
       data: { id: 'id', type: 'marketplaceWebhooks' },
@@ -49,7 +49,7 @@ describe('resource marketplaceWebhooks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.marketplaceWebhooks.update('id', {
       data: {
@@ -60,7 +60,7 @@ describe('resource marketplaceWebhooks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.marketplaceWebhooks.list();
     const rawResponse = await responsePromise.asResponse();
@@ -72,7 +72,7 @@ describe('resource marketplaceWebhooks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -83,7 +83,7 @@ describe('resource marketplaceWebhooks', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.marketplaceWebhooks.delete('id');
     const rawResponse = await responsePromise.asResponse();

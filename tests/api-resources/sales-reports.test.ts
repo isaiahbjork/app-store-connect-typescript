@@ -8,8 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource salesReports', () => {
-  // skipped: tests are disabled for the time being
-  test.skip('list: required and optional params', async () => {
+  test('list: required and optional params', async () => {
     const response = await client.salesReports.list({
       'filter[frequency]': ['DAILY'],
       'filter[reportSubType]': ['SUMMARY'],

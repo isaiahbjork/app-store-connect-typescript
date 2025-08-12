@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appClipAppStoreReviewDetails', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appClipAppStoreReviewDetails.create({
       data: {
@@ -27,7 +27,7 @@ describe('resource appClipAppStoreReviewDetails', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appClipAppStoreReviewDetails.create({
       data: {
@@ -40,7 +40,7 @@ describe('resource appClipAppStoreReviewDetails', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appClipAppStoreReviewDetails.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource appClipAppStoreReviewDetails', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -64,7 +64,7 @@ describe('resource appClipAppStoreReviewDetails', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appClipAppStoreReviewDetails.update('id', {
       data: { id: 'id', type: 'appClipAppStoreReviewDetails' },
@@ -78,7 +78,7 @@ describe('resource appClipAppStoreReviewDetails', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appClipAppStoreReviewDetails.update('id', {
       data: {

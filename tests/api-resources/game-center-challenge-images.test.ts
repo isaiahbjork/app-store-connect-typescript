@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterChallengeImages', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterChallengeImages.create({
       data: { attributes: { fileName: 'fileName', fileSize: 0 }, type: 'gameCenterChallengeImages' },
@@ -22,7 +22,7 @@ describe('resource gameCenterChallengeImages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterChallengeImages.create({
       data: {
@@ -36,7 +36,7 @@ describe('resource gameCenterChallengeImages', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterChallengeImages.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -48,7 +48,7 @@ describe('resource gameCenterChallengeImages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -60,7 +60,7 @@ describe('resource gameCenterChallengeImages', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterChallengeImages.update('id', {
       data: { id: 'id', type: 'gameCenterChallengeImages' },
@@ -74,14 +74,14 @@ describe('resource gameCenterChallengeImages', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterChallengeImages.update('id', {
       data: { id: 'id', type: 'gameCenterChallengeImages', attributes: { uploaded: true } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterChallengeImages.delete('id');
     const rawResponse = await responsePromise.asResponse();

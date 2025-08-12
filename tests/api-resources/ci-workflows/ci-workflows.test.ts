@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource ciWorkflows', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.ciWorkflows.create({
       data: {
@@ -38,7 +38,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.ciWorkflows.create({
       data: {
@@ -124,7 +124,7 @@ describe('resource ciWorkflows', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.ciWorkflows.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -136,7 +136,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -152,7 +152,7 @@ describe('resource ciWorkflows', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.ciWorkflows.update('id', { data: { id: 'id', type: 'ciWorkflows' } });
     const rawResponse = await responsePromise.asResponse();
@@ -164,7 +164,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.ciWorkflows.update('id', {
       data: {
@@ -249,7 +249,7 @@ describe('resource ciWorkflows', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.ciWorkflows.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -261,7 +261,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listBuildRuns', async () => {
     const responsePromise = client.ciWorkflows.listBuildRuns('id');
     const rawResponse = await responsePromise.asResponse();
@@ -273,7 +273,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listBuildRuns: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -297,7 +297,7 @@ describe('resource ciWorkflows', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRepository', async () => {
     const responsePromise = client.ciWorkflows.retrieveRepository('id');
     const rawResponse = await responsePromise.asResponse();
@@ -309,7 +309,7 @@ describe('resource ciWorkflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRepository: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

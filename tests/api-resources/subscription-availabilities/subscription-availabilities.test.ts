@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource subscriptionAvailabilities', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.subscriptionAvailabilities.create({
       data: {
@@ -29,7 +29,7 @@ describe('resource subscriptionAvailabilities', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.subscriptionAvailabilities.create({
       data: {
@@ -43,7 +43,7 @@ describe('resource subscriptionAvailabilities', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.subscriptionAvailabilities.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource subscriptionAvailabilities', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -72,7 +72,7 @@ describe('resource subscriptionAvailabilities', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAvailableTerritories', async () => {
     const responsePromise = client.subscriptionAvailabilities.listAvailableTerritories('id');
     const rawResponse = await responsePromise.asResponse();
@@ -84,7 +84,7 @@ describe('resource subscriptionAvailabilities', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAvailableTerritories: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

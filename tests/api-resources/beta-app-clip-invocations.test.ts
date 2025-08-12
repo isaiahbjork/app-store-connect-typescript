@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaAppClipInvocations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.betaAppClipInvocations.create({
       data: {
@@ -31,7 +31,7 @@ describe('resource betaAppClipInvocations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.betaAppClipInvocations.create({
       data: {
@@ -55,7 +55,7 @@ describe('resource betaAppClipInvocations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.betaAppClipInvocations.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -67,7 +67,7 @@ describe('resource betaAppClipInvocations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -83,7 +83,7 @@ describe('resource betaAppClipInvocations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.betaAppClipInvocations.update('id', {
       data: { id: 'id', type: 'betaAppClipInvocations' },
@@ -97,14 +97,14 @@ describe('resource betaAppClipInvocations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.betaAppClipInvocations.update('id', {
       data: { id: 'id', type: 'betaAppClipInvocations', attributes: { url: 'https://example.com' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.betaAppClipInvocations.delete('id');
     const rawResponse = await responsePromise.asResponse();

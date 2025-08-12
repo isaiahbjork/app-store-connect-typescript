@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource metrics', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getBetaTesterUsages: only required params', async () => {
     const responsePromise = client.betaTesters.metrics.getBetaTesterUsages('id', {
       'filter[apps]': 'filter[apps]',
@@ -22,7 +22,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getBetaTesterUsages: required and optional params', async () => {
     const response = await client.betaTesters.metrics.getBetaTesterUsages('id', {
       'filter[apps]': 'filter[apps]',

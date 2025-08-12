@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterEnabledVersions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCompatibleVersions', async () => {
     const responsePromise = client.gameCenterEnabledVersions.listCompatibleVersions('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource gameCenterEnabledVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCompatibleVersions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

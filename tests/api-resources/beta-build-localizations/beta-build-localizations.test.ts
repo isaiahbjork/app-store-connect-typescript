@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaBuildLocalizations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.betaBuildLocalizations.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.betaBuildLocalizations.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource betaBuildLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.betaBuildLocalizations.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -61,7 +61,7 @@ describe('resource betaBuildLocalizations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.betaBuildLocalizations.update('id', {
       data: { id: 'id', type: 'betaBuildLocalizations' },
@@ -75,14 +75,14 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.betaBuildLocalizations.update('id', {
       data: { id: 'id', type: 'betaBuildLocalizations', attributes: { whatsNew: 'whatsNew' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.betaBuildLocalizations.list();
     const rawResponse = await responsePromise.asResponse();
@@ -94,7 +94,7 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -112,7 +112,7 @@ describe('resource betaBuildLocalizations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.betaBuildLocalizations.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -124,7 +124,7 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuild', async () => {
     const responsePromise = client.betaBuildLocalizations.retrieveBuild('id');
     const rawResponse = await responsePromise.asResponse();
@@ -136,7 +136,7 @@ describe('resource betaBuildLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuild: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

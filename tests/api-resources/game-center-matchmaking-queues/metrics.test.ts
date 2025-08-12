@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource metrics', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getExperimentQueueSizes: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingQueues.metrics.getExperimentQueueSizes('id', {
       granularity: 'P1D',
@@ -22,7 +22,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getExperimentQueueSizes: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingQueues.metrics.getExperimentQueueSizes('id', {
       granularity: 'P1D',
@@ -31,7 +31,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getExperimentRequests: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingQueues.metrics.getExperimentRequests('id', {
       granularity: 'P1D',
@@ -45,7 +45,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getExperimentRequests: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingQueues.metrics.getExperimentRequests('id', {
       granularity: 'P1D',
@@ -57,7 +57,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getQueueSizes: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingQueues.metrics.getQueueSizes('id', {
       granularity: 'P1D',
@@ -71,7 +71,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getQueueSizes: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingQueues.metrics.getQueueSizes('id', {
       granularity: 'P1D',
@@ -80,7 +80,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getRequests: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingQueues.metrics.getRequests('id', {
       granularity: 'P1D',
@@ -94,7 +94,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getRequests: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingQueues.metrics.getRequests('id', {
       granularity: 'P1D',
@@ -106,7 +106,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getSessions: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingQueues.metrics.getSessions('id', {
       granularity: 'P1D',
@@ -120,7 +120,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getSessions: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingQueues.metrics.getSessions('id', {
       granularity: 'P1D',

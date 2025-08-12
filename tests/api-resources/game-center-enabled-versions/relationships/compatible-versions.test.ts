@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource compatibleVersions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterEnabledVersions.relationships.compatibleVersions.create('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],
@@ -22,14 +22,14 @@ describe('resource compatibleVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterEnabledVersions.relationships.compatibleVersions.create('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterEnabledVersions.relationships.compatibleVersions.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource compatibleVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -53,7 +53,7 @@ describe('resource compatibleVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterEnabledVersions.relationships.compatibleVersions.update('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],
@@ -67,14 +67,14 @@ describe('resource compatibleVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterEnabledVersions.relationships.compatibleVersions.update('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.gameCenterEnabledVersions.relationships.compatibleVersions.delete('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],
@@ -88,7 +88,7 @@ describe('resource compatibleVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.gameCenterEnabledVersions.relationships.compatibleVersions.delete('id', {
       data: [{ id: 'id', type: 'gameCenterEnabledVersions' }],

@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource relationships', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppClipDefaultExperienceLocalizations', async () => {
     const responsePromise =
       client.appClipDefaultExperiences.relationships.listAppClipDefaultExperienceLocalizations('id');
@@ -21,7 +21,7 @@ describe('resource relationships', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppClipDefaultExperienceLocalizations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -33,7 +33,7 @@ describe('resource relationships', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppClipAppStoreReviewDetail', async () => {
     const responsePromise =
       client.appClipDefaultExperiences.relationships.retrieveAppClipAppStoreReviewDetail('id');

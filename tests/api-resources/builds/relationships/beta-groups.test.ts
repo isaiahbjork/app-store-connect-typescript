@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaGroups', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.builds.relationships.betaGroups.create('id', {
       data: [{ id: 'id', type: 'betaGroups' }],
@@ -22,14 +22,14 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.builds.relationships.betaGroups.create('id', {
       data: [{ id: 'id', type: 'betaGroups' }],
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.builds.relationships.betaGroups.delete('id', {
       data: [{ id: 'id', type: 'betaGroups' }],
@@ -43,7 +43,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.builds.relationships.betaGroups.delete('id', {
       data: [{ id: 'id', type: 'betaGroups' }],

@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource merchantIDs', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.merchantIDs.create({
       data: { attributes: { identifier: 'identifier', name: 'name' }, type: 'merchantIds' },
@@ -22,14 +22,14 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.merchantIDs.create({
       data: { attributes: { identifier: 'identifier', name: 'name' }, type: 'merchantIds' },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.merchantIDs.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -58,7 +58,7 @@ describe('resource merchantIDs', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.merchantIDs.update('id', { data: { id: 'id', type: 'merchantIds' } });
     const rawResponse = await responsePromise.asResponse();
@@ -70,14 +70,14 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.merchantIDs.update('id', {
       data: { id: 'id', type: 'merchantIds', attributes: { name: 'name' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.merchantIDs.list();
     const rawResponse = await responsePromise.asResponse();
@@ -89,7 +89,7 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -109,7 +109,7 @@ describe('resource merchantIDs', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.merchantIDs.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -121,7 +121,7 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCertificates', async () => {
     const responsePromise = client.merchantIDs.listCertificates('id');
     const rawResponse = await responsePromise.asResponse();
@@ -133,7 +133,7 @@ describe('resource merchantIDs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCertificates: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

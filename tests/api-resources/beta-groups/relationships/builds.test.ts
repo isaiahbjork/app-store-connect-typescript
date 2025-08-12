@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource builds', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.betaGroups.relationships.builds.list('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource builds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -32,7 +32,7 @@ describe('resource builds', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('add: only required params', async () => {
     const responsePromise = client.betaGroups.relationships.builds.add('id', {
       data: [{ id: 'id', type: 'builds' }],
@@ -46,14 +46,14 @@ describe('resource builds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('add: required and optional params', async () => {
     const response = await client.betaGroups.relationships.builds.add('id', {
       data: [{ id: 'id', type: 'builds' }],
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('remove: only required params', async () => {
     const responsePromise = client.betaGroups.relationships.builds.remove('id', {
       data: [{ id: 'id', type: 'builds' }],
@@ -67,7 +67,7 @@ describe('resource builds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('remove: required and optional params', async () => {
     const response = await client.betaGroups.relationships.builds.remove('id', {
       data: [{ id: 'id', type: 'builds' }],

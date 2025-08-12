@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaTesterInvitations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.betaTesterInvitations.create({
       data: { relationships: { app: { data: { id: 'id', type: 'apps' } } }, type: 'betaTesterInvitations' },
@@ -22,7 +22,7 @@ describe('resource betaTesterInvitations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.betaTesterInvitations.create({
       data: {

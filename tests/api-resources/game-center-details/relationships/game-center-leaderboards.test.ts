@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterLeaderboards', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboards', async () => {
     const responsePromise =
       client.gameCenterDetails.relationships.gameCenterLeaderboards.retrieveGameCenterLeaderboards('id');
@@ -21,7 +21,7 @@ describe('resource gameCenterLeaderboards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboards: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -33,7 +33,7 @@ describe('resource gameCenterLeaderboards', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateGameCenterLeaderboards: only required params', async () => {
     const responsePromise =
       client.gameCenterDetails.relationships.gameCenterLeaderboards.updateGameCenterLeaderboards('id', {
@@ -48,7 +48,7 @@ describe('resource gameCenterLeaderboards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateGameCenterLeaderboards: required and optional params', async () => {
     const response =
       await client.gameCenterDetails.relationships.gameCenterLeaderboards.updateGameCenterLeaderboards('id', {

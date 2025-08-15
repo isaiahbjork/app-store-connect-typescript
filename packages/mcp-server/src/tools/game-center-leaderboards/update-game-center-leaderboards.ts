@@ -38,6 +38,7 @@ export const tool: Tool = {
             properties: {
               activityProperties: {
                 type: 'object',
+                additionalProperties: true,
               },
               archived: {
                 type: 'boolean',

@@ -43,6 +43,7 @@ export const tool: Tool = {
               },
               activityProperties: {
                 type: 'object',
+                additionalProperties: true,
               },
             },
             required: ['points', 'referenceName', 'repeatable', 'showBeforeEarned', 'vendorIdentifier'],

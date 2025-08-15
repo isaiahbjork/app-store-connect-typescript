@@ -51,6 +51,7 @@ export const tool: Tool = {
               },
               properties: {
                 type: 'object',
+                additionalProperties: true,
               },
               referenceName: {
                 type: 'string',

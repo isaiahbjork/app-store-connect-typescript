@@ -45,6 +45,7 @@ export const tool: Tool = {
               },
               activityProperties: {
                 type: 'object',
+                additionalProperties: true,
               },
               recurrenceDuration: {
                 type: 'string',

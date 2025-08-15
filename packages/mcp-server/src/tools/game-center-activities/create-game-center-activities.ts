@@ -44,6 +44,7 @@ export const tool: Tool = {
               },
               properties: {
                 type: 'object',
+                additionalProperties: true,
               },
               supportsPartyCode: {
                 type: 'boolean',

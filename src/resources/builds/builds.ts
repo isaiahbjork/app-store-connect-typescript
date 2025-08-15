@@ -413,7 +413,7 @@ export namespace BuildBundle {
 
     dSYMUrl?: string;
 
-    entitlements?: Record<string, Record<string, string>>;
+    entitlements?: { [key: string]: { [key: string]: string } };
 
     fileName?: string;
 

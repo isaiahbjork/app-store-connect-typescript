@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource relationships', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboard', async () => {
     const responsePromise =
       client.gameCenterLeaderboardSetMemberLocalizations.relationships.retrieveGameCenterLeaderboard('id');
@@ -21,7 +21,7 @@ describe('resource relationships', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboardSet', async () => {
     const responsePromise =
       client.gameCenterLeaderboardSetMemberLocalizations.relationships.retrieveGameCenterLeaderboardSet('id');

@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboardSetMemberLocalizations.create({
       data: {
@@ -28,7 +28,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterLeaderboardSetMemberLocalizations.create({
       data: {
@@ -42,7 +42,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboardSetMemberLocalizations.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboardSetMemberLocalizations' },
@@ -56,14 +56,14 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterLeaderboardSetMemberLocalizations.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboardSetMemberLocalizations', attributes: { name: 'name' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboardSetMemberLocalizations.list({
       'filter[gameCenterLeaderboard]': ['string'],
@@ -78,7 +78,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.gameCenterLeaderboardSetMemberLocalizations.list({
       'filter[gameCenterLeaderboard]': ['string'],
@@ -91,7 +91,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterLeaderboardSetMemberLocalizations.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -103,7 +103,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboard', async () => {
     const responsePromise =
       client.gameCenterLeaderboardSetMemberLocalizations.retrieveGameCenterLeaderboard('id');
@@ -116,7 +116,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboard: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -141,7 +141,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboardSet', async () => {
     const responsePromise =
       client.gameCenterLeaderboardSetMemberLocalizations.retrieveGameCenterLeaderboardSet('id');
@@ -154,7 +154,7 @@ describe('resource gameCenterLeaderboardSetMemberLocalizations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboardSet: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

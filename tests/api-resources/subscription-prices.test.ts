@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource subscriptionPrices', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.subscriptionPrices.create({
       data: {
@@ -28,7 +28,7 @@ describe('resource subscriptionPrices', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.subscriptionPrices.create({
       data: {
@@ -43,7 +43,7 @@ describe('resource subscriptionPrices', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.subscriptionPrices.delete('id');
     const rawResponse = await responsePromise.asResponse();

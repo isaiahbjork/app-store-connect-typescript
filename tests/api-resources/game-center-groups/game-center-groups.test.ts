@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterGroups', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterGroups.create({ data: { type: 'gameCenterGroups' } });
     const rawResponse = await responsePromise.asResponse();
@@ -20,14 +20,14 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterGroups.create({
       data: { type: 'gameCenterGroups', attributes: { referenceName: 'referenceName' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterGroups.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -39,7 +39,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -66,7 +66,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterGroups.update('id', {
       data: { id: 'id', type: 'gameCenterGroups' },
@@ -80,14 +80,14 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterGroups.update('id', {
       data: { id: 'id', type: 'gameCenterGroups', attributes: { referenceName: 'referenceName' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.gameCenterGroups.list();
     const rawResponse = await responsePromise.asResponse();
@@ -99,7 +99,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -127,7 +127,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterGroups.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -139,7 +139,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterAchievements', async () => {
     const responsePromise = client.gameCenterGroups.listGameCenterAchievements('id');
     const rawResponse = await responsePromise.asResponse();
@@ -151,7 +151,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterAchievements: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -177,7 +177,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterActivities', async () => {
     const responsePromise = client.gameCenterGroups.listGameCenterActivities('id');
     const rawResponse = await responsePromise.asResponse();
@@ -189,7 +189,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterActivities: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -213,7 +213,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterChallenges', async () => {
     const responsePromise = client.gameCenterGroups.listGameCenterChallenges('id');
     const rawResponse = await responsePromise.asResponse();
@@ -225,7 +225,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterChallenges: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -249,7 +249,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboardSets', async () => {
     const responsePromise = client.gameCenterGroups.listGameCenterLeaderboardSets('id');
     const rawResponse = await responsePromise.asResponse();
@@ -261,7 +261,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboardSets: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -287,7 +287,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboards', async () => {
     const responsePromise = client.gameCenterGroups.listGameCenterLeaderboards('id');
     const rawResponse = await responsePromise.asResponse();
@@ -299,7 +299,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboards: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -328,7 +328,7 @@ describe('resource gameCenterGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterDetails', async () => {
     const responsePromise = client.gameCenterGroups.retrieveGameCenterDetails('id');
     const rawResponse = await responsePromise.asResponse();
@@ -340,7 +340,7 @@ describe('resource gameCenterGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterDetails: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

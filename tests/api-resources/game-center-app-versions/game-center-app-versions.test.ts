@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterAppVersions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterAppVersions.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource gameCenterAppVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterAppVersions.create({
       data: {
@@ -35,7 +35,7 @@ describe('resource gameCenterAppVersions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterAppVersions.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource gameCenterAppVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -64,7 +64,7 @@ describe('resource gameCenterAppVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterAppVersions.update('id', {
       data: { id: 'id', type: 'gameCenterAppVersions' },
@@ -78,14 +78,14 @@ describe('resource gameCenterAppVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterAppVersions.update('id', {
       data: { id: 'id', type: 'gameCenterAppVersions', attributes: { enabled: true } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCompatibilityVersions', async () => {
     const responsePromise = client.gameCenterAppVersions.listCompatibilityVersions('id');
     const rawResponse = await responsePromise.asResponse();
@@ -97,7 +97,7 @@ describe('resource gameCenterAppVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCompatibilityVersions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -116,7 +116,7 @@ describe('resource gameCenterAppVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersion', async () => {
     const responsePromise = client.gameCenterAppVersions.retrieveAppStoreVersion('id');
     const rawResponse = await responsePromise.asResponse();
@@ -128,7 +128,7 @@ describe('resource gameCenterAppVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersion: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

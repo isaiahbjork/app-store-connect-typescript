@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appStoreVersions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appStoreVersions.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appStoreVersions.create({
       data: {
@@ -49,7 +49,7 @@ describe('resource appStoreVersions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appStoreVersions.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -61,7 +61,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -90,7 +90,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appStoreVersions.update('id', {
       data: { id: 'id', type: 'appStoreVersions' },
@@ -104,7 +104,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appStoreVersions.update('id', {
       data: {
@@ -127,7 +127,7 @@ describe('resource appStoreVersions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appStoreVersions.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -139,7 +139,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAgeRatingDeclaration', async () => {
     const responsePromise = client.appStoreVersions.retrieveAgeRatingDeclaration('id');
     const rawResponse = await responsePromise.asResponse();
@@ -151,7 +151,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAgeRatingDeclaration: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -163,7 +163,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAlternativeDistributionPackage', async () => {
     const responsePromise = client.appStoreVersions.retrieveAlternativeDistributionPackage('id');
     const rawResponse = await responsePromise.asResponse();
@@ -175,7 +175,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAlternativeDistributionPackage: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -192,7 +192,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppClipDefaultExperience', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppClipDefaultExperience('id');
     const rawResponse = await responsePromise.asResponse();
@@ -204,7 +204,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppClipDefaultExperience: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -224,7 +224,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreReviewDetail', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreReviewDetail('id');
     const rawResponse = await responsePromise.asResponse();
@@ -236,7 +236,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreReviewDetail: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -254,7 +254,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionExperiments', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreVersionExperiments('id');
     const rawResponse = await responsePromise.asResponse();
@@ -266,7 +266,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionExperiments: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -286,7 +286,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionExperimentsV2', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreVersionExperimentsV2('id');
     const rawResponse = await responsePromise.asResponse();
@@ -298,7 +298,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionExperimentsV2: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -320,7 +320,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionLocalizations', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreVersionLocalizations('id');
     const rawResponse = await responsePromise.asResponse();
@@ -332,7 +332,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionLocalizations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -354,7 +354,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionPhasedRelease', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreVersionPhasedRelease('id');
     const rawResponse = await responsePromise.asResponse();
@@ -366,7 +366,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionPhasedRelease: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -378,7 +378,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionSubmission', async () => {
     const responsePromise = client.appStoreVersions.retrieveAppStoreVersionSubmission('id');
     const rawResponse = await responsePromise.asResponse();
@@ -390,7 +390,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersionSubmission: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -406,7 +406,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuild', async () => {
     const responsePromise = client.appStoreVersions.retrieveBuild('id');
     const rawResponse = await responsePromise.asResponse();
@@ -418,7 +418,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuild: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -430,7 +430,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCustomerReviews', async () => {
     const responsePromise = client.appStoreVersions.retrieveCustomerReviews('id');
     const rawResponse = await responsePromise.asResponse();
@@ -442,7 +442,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCustomerReviews: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -463,7 +463,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterAppVersion', async () => {
     const responsePromise = client.appStoreVersions.retrieveGameCenterAppVersion('id');
     const rawResponse = await responsePromise.asResponse();
@@ -475,7 +475,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterAppVersion: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -492,7 +492,7 @@ describe('resource appStoreVersions', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRoutingAppCoverage', async () => {
     const responsePromise = client.appStoreVersions.retrieveRoutingAppCoverage('id');
     const rawResponse = await responsePromise.asResponse();
@@ -504,7 +504,7 @@ describe('resource appStoreVersions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRoutingAppCoverage: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

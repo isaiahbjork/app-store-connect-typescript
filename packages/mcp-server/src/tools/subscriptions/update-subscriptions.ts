@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import AppStoreConnectAPI from 'app-store-connect-api';
 
 export const metadata: Metadata = {
@@ -54,7 +53,6 @@ export const tool: Tool = {
                 enum: ['ONE_WEEK', 'ONE_MONTH', 'TWO_MONTHS', 'THREE_MONTHS', 'SIX_MONTHS', 'ONE_YEAR'],
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -79,7 +77,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               prices: {
                 type: 'object',
@@ -101,7 +98,6 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
               promotionalOffers: {
                 type: 'object',
@@ -123,10 +119,8 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
@@ -189,7 +183,6 @@ export const tool: Tool = {
                           },
                         },
                       },
-                      required: [],
                     },
                     subscription: {
                       type: 'object',
@@ -208,10 +201,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['attributes', 'type'],
@@ -237,7 +228,6 @@ export const tool: Tool = {
                       format: 'date',
                     },
                   },
-                  required: [],
                 },
                 relationships: {
                   type: 'object',
@@ -259,7 +249,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     subscriptionPricePoint: {
                       type: 'object',
@@ -278,7 +267,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     territory: {
                       type: 'object',
@@ -297,10 +285,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['type'],
@@ -358,7 +344,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     subscriptionPricePoint: {
                       type: 'object',
@@ -377,7 +362,6 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                     territory: {
                       type: 'object',
@@ -396,10 +380,8 @@ export const tool: Tool = {
                           required: ['id', 'type'],
                         },
                       },
-                      required: [],
                     },
                   },
-                  required: [],
                 },
               },
               required: ['attributes', 'type'],
@@ -408,6 +390,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id', 'data'],
     $defs: {
       subscription_offer_duration: {
         type: 'string',
@@ -428,6 +411,7 @@ export const tool: Tool = {
       },
     },
   },
+  annotations: {},
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

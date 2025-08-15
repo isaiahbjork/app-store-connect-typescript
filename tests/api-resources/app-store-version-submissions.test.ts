@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appStoreVersionSubmissions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appStoreVersionSubmissions.delete('id');
     const rawResponse = await responsePromise.asResponse();

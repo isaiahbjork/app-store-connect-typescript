@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appEvents', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appEvents.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource appEvents', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appEvents.create({
       data: {
@@ -53,7 +53,7 @@ describe('resource appEvents', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appEvents.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -65,7 +65,7 @@ describe('resource appEvents', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -82,7 +82,7 @@ describe('resource appEvents', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appEvents.update('id', { data: { id: 'id', type: 'appEvents' } });
     const rawResponse = await responsePromise.asResponse();
@@ -94,7 +94,7 @@ describe('resource appEvents', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appEvents.update('id', {
       data: {
@@ -121,7 +121,7 @@ describe('resource appEvents', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appEvents.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -133,7 +133,7 @@ describe('resource appEvents', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations', async () => {
     const responsePromise = client.appEvents.listLocalizations('id');
     const rawResponse = await responsePromise.asResponse();
@@ -145,7 +145,7 @@ describe('resource appEvents', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

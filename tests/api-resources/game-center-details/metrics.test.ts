@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource metrics', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveClassicMatchmakingRequests: only required params', async () => {
     const responsePromise = client.gameCenterDetails.metrics.retrieveClassicMatchmakingRequests('id', {
       granularity: 'P1D',
@@ -22,7 +22,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveClassicMatchmakingRequests: required and optional params', async () => {
     const response = await client.gameCenterDetails.metrics.retrieveClassicMatchmakingRequests('id', {
       granularity: 'P1D',
@@ -33,7 +33,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRuleBasedMatchmakingRequests: only required params', async () => {
     const responsePromise = client.gameCenterDetails.metrics.retrieveRuleBasedMatchmakingRequests('id', {
       granularity: 'P1D',
@@ -47,7 +47,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRuleBasedMatchmakingRequests: required and optional params', async () => {
     const response = await client.gameCenterDetails.metrics.retrieveRuleBasedMatchmakingRequests('id', {
       granularity: 'P1D',

@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appClipDefaultExperience', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.appStoreVersions.relationships.appClipDefaultExperience.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource appClipDefaultExperience', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appStoreVersions.relationships.appClipDefaultExperience.update('id', {
       data: { id: 'id', type: 'appClipDefaultExperiences' },
@@ -34,7 +34,7 @@ describe('resource appClipDefaultExperience', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appStoreVersions.relationships.appClipDefaultExperience.update('id', {
       data: { id: 'id', type: 'appClipDefaultExperiences' },

@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource promotedPurchases', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrievePromotedPurchases', async () => {
     const responsePromise = client.apps.relationships.promotedPurchases.retrievePromotedPurchases('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource promotedPurchases', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrievePromotedPurchases: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -32,7 +32,7 @@ describe('resource promotedPurchases', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updatePromotedPurchases: only required params', async () => {
     const responsePromise = client.apps.relationships.promotedPurchases.updatePromotedPurchases('id', {
       data: [{ id: 'id', type: 'promotedPurchases' }],
@@ -46,7 +46,7 @@ describe('resource promotedPurchases', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updatePromotedPurchases: required and optional params', async () => {
     const response = await client.apps.relationships.promotedPurchases.updatePromotedPurchases('id', {
       data: [{ id: 'id', type: 'promotedPurchases' }],

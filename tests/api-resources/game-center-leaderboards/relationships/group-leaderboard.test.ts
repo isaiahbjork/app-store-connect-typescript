@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource groupLeaderboard', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterLeaderboards.relationships.groupLeaderboard.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource groupLeaderboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboards.relationships.groupLeaderboard.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboards' },
@@ -34,7 +34,7 @@ describe('resource groupLeaderboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterLeaderboards.relationships.groupLeaderboard.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboards' },

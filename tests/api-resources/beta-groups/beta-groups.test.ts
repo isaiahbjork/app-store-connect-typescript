@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource betaGroups', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.betaGroups.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.betaGroups.create({
       data: {
@@ -49,7 +49,7 @@ describe('resource betaGroups', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.betaGroups.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -61,7 +61,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -82,7 +82,7 @@ describe('resource betaGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.betaGroups.update('id', { data: { id: 'id', type: 'betaGroups' } });
     const rawResponse = await responsePromise.asResponse();
@@ -94,7 +94,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.betaGroups.update('id', {
       data: {
@@ -113,7 +113,7 @@ describe('resource betaGroups', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.betaGroups.list();
     const rawResponse = await responsePromise.asResponse();
@@ -125,7 +125,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -155,7 +155,7 @@ describe('resource betaGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.betaGroups.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -167,7 +167,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('checkBetaRecruitmentCriterionCompatibleBuild', async () => {
     const responsePromise = client.betaGroups.checkBetaRecruitmentCriterionCompatibleBuild('id');
     const rawResponse = await responsePromise.asResponse();
@@ -179,7 +179,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('checkBetaRecruitmentCriterionCompatibleBuild: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -191,7 +191,7 @@ describe('resource betaGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listBetaRecruitmentCriteria', async () => {
     const responsePromise = client.betaGroups.listBetaRecruitmentCriteria('id');
     const rawResponse = await responsePromise.asResponse();
@@ -203,7 +203,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listBetaRecruitmentCriteria: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -215,7 +215,7 @@ describe('resource betaGroups', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveApp', async () => {
     const responsePromise = client.betaGroups.retrieveApp('id');
     const rawResponse = await responsePromise.asResponse();
@@ -227,7 +227,7 @@ describe('resource betaGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveApp: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

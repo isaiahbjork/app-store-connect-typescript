@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource metrics', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBooleanRuleResults: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.metrics.retrieveBooleanRuleResults('id', {
       granularity: 'P1D',
@@ -22,7 +22,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBooleanRuleResults: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRules.metrics.retrieveBooleanRuleResults('id', {
       granularity: 'P1D',
@@ -34,7 +34,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveNumberRuleResults: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.metrics.retrieveNumberRuleResults('id', {
       granularity: 'P1D',
@@ -48,7 +48,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveNumberRuleResults: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRules.metrics.retrieveNumberRuleResults('id', {
       granularity: 'P1D',
@@ -59,7 +59,7 @@ describe('resource metrics', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRuleErrors: only required params', async () => {
     const responsePromise = client.gameCenterMatchmakingRules.metrics.retrieveRuleErrors('id', {
       granularity: 'P1D',
@@ -73,7 +73,7 @@ describe('resource metrics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRuleErrors: required and optional params', async () => {
     const response = await client.gameCenterMatchmakingRules.metrics.retrieveRuleErrors('id', {
       granularity: 'P1D',

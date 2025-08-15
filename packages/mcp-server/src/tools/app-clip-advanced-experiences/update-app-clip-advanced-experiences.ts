@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import AppStoreConnectAPI from 'app-store-connect-api';
 
 export const metadata: Metadata = {
@@ -100,14 +99,12 @@ export const tool: Tool = {
                             type: 'number',
                           },
                         },
-                        required: [],
                       },
                       source: {
                         type: 'string',
                         enum: ['CALCULATED', 'MANUALLY_PLACED'],
                       },
                     },
-                    required: [],
                   },
                   homePage: {
                     type: 'string',
@@ -146,10 +143,8 @@ export const tool: Tool = {
                             },
                           },
                         },
-                        required: [],
                       },
                     },
-                    required: [],
                   },
                   mapAction: {
                     type: 'string',
@@ -216,7 +211,6 @@ export const tool: Tool = {
                         enum: ['FAX', 'LANDLINE', 'MOBILE', 'TOLLFREE'],
                       },
                     },
-                    required: [],
                   },
                   placeId: {
                     type: 'string',
@@ -226,13 +220,11 @@ export const tool: Tool = {
                     enum: ['OWNER', 'AUTHORIZED', 'OTHER'],
                   },
                 },
-                required: [],
               },
               removed: {
                 type: 'boolean',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -254,7 +246,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               headerImage: {
                 type: 'object',
@@ -273,7 +264,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               localizations: {
                 type: 'object',
@@ -295,10 +285,8 @@ export const tool: Tool = {
                     },
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
@@ -310,6 +298,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: ['id', 'data'],
     $defs: {
       app_clip_action: {
         type: 'string',
@@ -375,13 +364,13 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
         required: ['type'],
       },
     },
   },
+  annotations: {},
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

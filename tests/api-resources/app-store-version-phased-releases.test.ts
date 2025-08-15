@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appStoreVersionPhasedReleases', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appStoreVersionPhasedReleases.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource appStoreVersionPhasedReleases', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appStoreVersionPhasedReleases.create({
       data: {
@@ -36,7 +36,7 @@ describe('resource appStoreVersionPhasedReleases', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.appStoreVersionPhasedReleases.update('id', {
       data: { id: 'id', type: 'appStoreVersionPhasedReleases' },
@@ -50,7 +50,7 @@ describe('resource appStoreVersionPhasedReleases', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.appStoreVersionPhasedReleases.update('id', {
       data: {
@@ -61,7 +61,7 @@ describe('resource appStoreVersionPhasedReleases', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.appStoreVersionPhasedReleases.delete('id');
     const rawResponse = await responsePromise.asResponse();

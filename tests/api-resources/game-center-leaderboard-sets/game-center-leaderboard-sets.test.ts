@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource gameCenterLeaderboardSets', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.gameCenterLeaderboardSets.create({
       data: {
@@ -40,7 +40,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -73,7 +73,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboardSets' },
@@ -87,14 +87,14 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.gameCenterLeaderboardSets.update('id', {
       data: { id: 'id', type: 'gameCenterLeaderboardSets', attributes: { referenceName: 'referenceName' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -106,7 +106,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboards', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.listGameCenterLeaderboards('id');
     const rawResponse = await responsePromise.asResponse();
@@ -118,7 +118,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGameCenterLeaderboards: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -147,7 +147,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.listLocalizations('id');
     const rawResponse = await responsePromise.asResponse();
@@ -159,7 +159,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listLocalizations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -177,7 +177,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listReleases', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.listReleases('id');
     const rawResponse = await responsePromise.asResponse();
@@ -189,7 +189,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listReleases: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -209,7 +209,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGroupLeaderboardSet', async () => {
     const responsePromise = client.gameCenterLeaderboardSets.retrieveGroupLeaderboardSet('id');
     const rawResponse = await responsePromise.asResponse();
@@ -221,7 +221,7 @@ describe('resource gameCenterLeaderboardSets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGroupLeaderboardSet: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

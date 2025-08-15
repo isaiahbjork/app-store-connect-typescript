@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import AppStoreConnectAPI from 'app-store-connect-api';
 
 export const metadata: Metadata = {
@@ -83,7 +82,6 @@ export const tool: Tool = {
                 $ref: '#/$defs/ci_tag_start_condition',
               },
             },
-            required: [],
           },
           relationships: {
             type: 'object',
@@ -105,7 +103,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               xcodeVersion: {
                 type: 'object',
@@ -124,15 +121,14 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
-            required: [],
           },
         },
         required: ['id', 'type'],
       },
     },
+    required: ['id', 'data'],
     $defs: {
       ci_action: {
         type: 'object',
@@ -199,17 +195,14 @@ export const tool: Tool = {
                       type: 'string',
                     },
                   },
-                  required: [],
                 },
               },
               testPlanName: {
                 type: 'string',
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       ci_action_type: {
         type: 'string',
@@ -236,7 +229,6 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_branch_patterns',
           },
         },
-        required: [],
       },
       ci_files_and_folders_rule: {
         type: 'object',
@@ -256,7 +248,6 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
           },
           mode: {
@@ -264,7 +255,6 @@ export const tool: Tool = {
             enum: ['START_IF_ANY_FILE_MATCHES', 'DO_NOT_START_IF_ALL_FILES_MATCH'],
           },
         },
-        required: [],
       },
       ci_branch_patterns: {
         type: 'object',
@@ -284,11 +274,9 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
           },
         },
-        required: [],
       },
       ci_manual_branch_start_condition: {
         type: 'object',
@@ -297,7 +285,6 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_branch_patterns',
           },
         },
-        required: [],
       },
       ci_manual_pull_request_start_condition: {
         type: 'object',
@@ -309,7 +296,6 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_branch_patterns',
           },
         },
-        required: [],
       },
       ci_manual_tag_start_condition: {
         type: 'object',
@@ -318,7 +304,6 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_tag_patterns',
           },
         },
-        required: [],
       },
       ci_tag_patterns: {
         type: 'object',
@@ -338,11 +323,9 @@ export const tool: Tool = {
                   type: 'string',
                 },
               },
-              required: [],
             },
           },
         },
-        required: [],
       },
       ci_pull_request_start_condition: {
         type: 'object',
@@ -360,7 +343,6 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_branch_patterns',
           },
         },
-        required: [],
       },
       ci_scheduled_start_condition: {
         type: 'object',
@@ -389,13 +371,11 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           source: {
             $ref: '#/$defs/ci_branch_patterns',
           },
         },
-        required: [],
       },
       ci_tag_start_condition: {
         type: 'object',
@@ -410,10 +390,10 @@ export const tool: Tool = {
             $ref: '#/$defs/ci_tag_patterns',
           },
         },
-        required: [],
       },
     },
   },
+  annotations: {},
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

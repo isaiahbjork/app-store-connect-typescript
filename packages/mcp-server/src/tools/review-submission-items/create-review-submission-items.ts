@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'app-store-connect-api-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import AppStoreConnectAPI from 'app-store-connect-api';
 
 export const metadata: Metadata = {
@@ -63,7 +62,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appEvent: {
                 type: 'object',
@@ -82,7 +80,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersion: {
                 type: 'object',
@@ -101,7 +98,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperiment: {
                 type: 'object',
@@ -120,7 +116,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
               appStoreVersionExperimentV2: {
                 type: 'object',
@@ -139,7 +134,6 @@ export const tool: Tool = {
                     required: ['id', 'type'],
                   },
                 },
-                required: [],
               },
             },
             required: ['reviewSubmission'],
@@ -152,7 +146,9 @@ export const tool: Tool = {
         required: ['relationships', 'type'],
       },
     },
+    required: ['data'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: AppStoreConnectAPI, args: Record<string, unknown> | undefined) => {

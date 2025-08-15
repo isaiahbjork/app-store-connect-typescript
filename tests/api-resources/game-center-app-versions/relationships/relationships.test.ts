@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource relationships', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppStoreVersion', async () => {
     const responsePromise = client.gameCenterAppVersions.relationships.retrieveAppStoreVersion('id');
     const rawResponse = await responsePromise.asResponse();

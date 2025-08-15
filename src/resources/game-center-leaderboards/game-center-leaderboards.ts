@@ -91,7 +91,7 @@ export interface GameCenterLeaderboard {
 
 export namespace GameCenterLeaderboard {
   export interface Attributes {
-    activityProperties?: Record<string, string>;
+    activityProperties?: { [key: string]: string };
 
     archived?: boolean;
 
@@ -309,7 +309,7 @@ export namespace GameCenterLeaderboardCreateParams {
 
       vendorIdentifier: string;
 
-      activityProperties?: Record<string, string>;
+      activityProperties?: { [key: string]: string };
 
       recurrenceDuration?: string;
 
@@ -466,7 +466,7 @@ export namespace GameCenterLeaderboardUpdateParams {
 
   export namespace Data {
     export interface Attributes {
-      activityProperties?: Record<string, string>;
+      activityProperties?: { [key: string]: string };
 
       archived?: boolean;
 

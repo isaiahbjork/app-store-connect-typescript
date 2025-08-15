@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource subscriptionIntroductoryOffers', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.subscriptionIntroductoryOffers.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource subscriptionIntroductoryOffers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.subscriptionIntroductoryOffers.create({
       data: {
@@ -48,7 +48,7 @@ describe('resource subscriptionIntroductoryOffers', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.subscriptionIntroductoryOffers.update('id', {
       data: { id: 'id', type: 'subscriptionIntroductoryOffers' },
@@ -62,14 +62,14 @@ describe('resource subscriptionIntroductoryOffers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.subscriptionIntroductoryOffers.update('id', {
       data: { id: 'id', type: 'subscriptionIntroductoryOffers', attributes: { endDate: '2019-12-27' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.subscriptionIntroductoryOffers.delete('id');
     const rawResponse = await responsePromise.asResponse();

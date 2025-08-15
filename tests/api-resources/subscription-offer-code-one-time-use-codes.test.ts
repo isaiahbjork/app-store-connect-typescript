@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.subscriptionOfferCodeOneTimeUseCodes.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.subscriptionOfferCodeOneTimeUseCodes.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.subscriptionOfferCodeOneTimeUseCodes.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -61,7 +61,7 @@ describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
     ).rejects.toThrow(AppStoreConnectAPI.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.subscriptionOfferCodeOneTimeUseCodes.update('id', {
       data: { id: 'id', type: 'subscriptionOfferCodeOneTimeUseCodes' },
@@ -75,14 +75,14 @@ describe('resource subscriptionOfferCodeOneTimeUseCodes', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.subscriptionOfferCodeOneTimeUseCodes.update('id', {
       data: { id: 'id', type: 'subscriptionOfferCodeOneTimeUseCodes', attributes: { active: true } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listValues', async () => {
     const responsePromise = client.subscriptionOfferCodeOneTimeUseCodes.listValues('id');
     const rawResponse = await responsePromise.asResponse();

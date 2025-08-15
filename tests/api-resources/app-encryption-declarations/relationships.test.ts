@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource relationships', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createBuild: only required params', async () => {
     const responsePromise = client.appEncryptionDeclarations.relationships.createBuild('id', {
       data: [{ id: 'id', type: 'builds' }],
@@ -22,14 +22,14 @@ describe('resource relationships', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createBuild: required and optional params', async () => {
     const response = await client.appEncryptionDeclarations.relationships.createBuild('id', {
       data: [{ id: 'id', type: 'builds' }],
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveApp', async () => {
     const responsePromise = client.appEncryptionDeclarations.relationships.retrieveApp('id');
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource relationships', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppEncryptionDeclarationDocument', async () => {
     const responsePromise =
       client.appEncryptionDeclarations.relationships.retrieveAppEncryptionDeclarationDocument('id');

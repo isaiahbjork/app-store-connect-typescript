@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource marketplaceSearchDetails', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.marketplaceSearchDetails.create({
       data: {
@@ -26,7 +26,7 @@ describe('resource marketplaceSearchDetails', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.marketplaceSearchDetails.create({
       data: {
@@ -37,7 +37,7 @@ describe('resource marketplaceSearchDetails', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.marketplaceSearchDetails.update('id', {
       data: { id: 'id', type: 'marketplaceSearchDetails' },
@@ -51,14 +51,14 @@ describe('resource marketplaceSearchDetails', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.marketplaceSearchDetails.update('id', {
       data: { id: 'id', type: 'marketplaceSearchDetails', attributes: { catalogUrl: 'https://example.com' } },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.marketplaceSearchDetails.delete('id');
     const rawResponse = await responsePromise.asResponse();

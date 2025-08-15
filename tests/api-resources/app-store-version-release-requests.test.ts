@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource appStoreVersionReleaseRequests', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.appStoreVersionReleaseRequests.create({
       data: {
@@ -25,7 +25,7 @@ describe('resource appStoreVersionReleaseRequests', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.appStoreVersionReleaseRequests.create({
       data: {

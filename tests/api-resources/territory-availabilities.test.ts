@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource territoryAvailabilities', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.territoryAvailabilities.update('id', {
       data: { id: 'id', type: 'territoryAvailabilities' },
@@ -22,7 +22,7 @@ describe('resource territoryAvailabilities', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.territoryAvailabilities.update('id', {
       data: {

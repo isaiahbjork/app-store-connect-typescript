@@ -8,7 +8,7 @@ const client = new AppStoreConnectAPI({
 });
 
 describe('resource relationships', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGameCenterLeaderboardImage', async () => {
     const responsePromise =
       client.gameCenterLeaderboardLocalizations.relationships.retrieveGameCenterLeaderboardImage('id');
